@@ -14,13 +14,14 @@ using cgimin.engine.material.simpletexture;
 using cgimin.engine.material.wobble1;
 using cgimin.engine.material.simplereflection;
 using cgimin.engine.camera;
+using OpenTK.Input;
 
 #endregion --- Using Directives ---
 
 namespace Examples.Tutorial
 {
 
-    public class CubeExample : GameWindow
+    public class ExampleProject : GameWindow
     {
 
         // das Beispiel-Objekt
@@ -37,11 +38,25 @@ namespace Examples.Tutorial
 
         private int updateCounter = 0;
 
-        public CubeExample()
+        public ExampleProject()
             : base(800, 600, new GraphicsMode(), "CGI-MIN Example", 0, DisplayDevice.Default, 3, 0, GraphicsContextFlags.ForwardCompatible | GraphicsContextFlags.Debug)
-        { }
+        {
+            this.KeyDown += KeyboardKeyDown;
+        }
 
-   
+
+        void KeyboardKeyDown(object sender, KeyboardKeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+                this.Exit();
+
+            if (e.Key == Key.F11)
+                if (this.WindowState == WindowState.Fullscreen)
+                    this.WindowState = WindowState.Normal;
+                else
+                    this.WindowState = WindowState.Fullscreen;
+        }
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -71,16 +86,7 @@ namespace Examples.Tutorial
  
 
         protected override void OnUpdateFrame(FrameEventArgs e)
-        {
-            if (Keyboard[OpenTK.Input.Key.Escape])
-                this.Exit();
-
-            if (Keyboard[OpenTK.Input.Key.F11])
-                if (WindowState != WindowState.Fullscreen)
-                    WindowState = WindowState.Fullscreen;
-                else
-                    WindowState = WindowState.Normal;
-
+        {           
             // updateCounter ist für den Animationsfortschritt zuständig
             updateCounter++;
         }
@@ -121,7 +127,7 @@ namespace Examples.Tutorial
         [STAThread]
         public static void Main()
         {
-            using (CubeExample example = new CubeExample())
+            using (ExampleProject example = new ExampleProject())
             {
                 example.Run(60.0, 0.0);
             }

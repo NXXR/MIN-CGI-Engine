@@ -402,7 +402,10 @@ C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.exe.config
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.exe
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.pdb
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\Engine.dll
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\OpenTK.dll
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\OpenTK.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\OpenTK.xml
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csprojAssemblyReference.cache
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csproj.CopyComplete
