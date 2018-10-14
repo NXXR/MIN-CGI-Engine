@@ -1,0 +1,410 @@
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\text\monospace.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionfogcascaded\CubeReflectionFogCascaded_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionfogcascaded\CubeReflectionFogCascaded_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionfog\CubeReflectionFog_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionfog\CubeReflectionFog_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldcascaded\WorldCascaded_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldcascaded\WorldCascaded_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfog\NormalMappingFog_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfog\NormalMappingFog_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfogshadow\NormalMappingFogShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfogshadow\NormalMappingFogShadow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfogshadowcascaded\NormalMappingFogShadowCascaded_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingfogshadowcascaded\NormalMappingFogShadowCascaded_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\world\World_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\world\World_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\effects\FireLine_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\effects\Explosion_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\effects\FireLine_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\effects\Explosion_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\Bitmap9Grid_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\BitmapGraphic_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\Bitmap9Grid_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\BitmapGraphic_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\alphacycle\AlphaCycle_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\alphacycle\AlphaCycle_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\alphatexture\AlphaTexture_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\alphatexture\AlphaTexture_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffusespecularshadow\AmbientDiffuseSpecularShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffusespecularshadow\AmbientDiffuseSpecularShadow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffuse\AmbientDiffuse_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffuse\AmbientDiffuse_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\ambientdiffusespecular\AmbientDiffuseSpecular_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\billboard\Billboard_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\billboard\Billboard_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\castshadow\CastShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\castshadow\CastShadow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionnormal\CubeReflectionNormal_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflectionnormal\CubeReflectionNormal_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingcubespecular\NormalMappingCubeSpecular_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingcubespecular\NormalMappingCubeSpecular_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingshadow\NormalMappingShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmappingshadow\NormalMappingShadow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmapping\NormalMapping_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\normalmapping\NormalMapping_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflection\CubeReflection_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\cubereflection\CubeReflection_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\simplereflection\SimpleReflection_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\simplereflection\SimpleReflection_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\textureglow\TextureGlow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\textureglow\TextureGlow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble1\Wobble1_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble1\Wobble1_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble2\Wobble2_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble2\Wobble2_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble3\Wobble3_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\old\wobble3\Wobble3_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglowcyclemask\WorldGlowCycleMask_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglowcyclemask\WorldGlowCycleMask_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglowcycle\WorldGlowCycle_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglowcycle\WorldGlowCycle_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglow\WorldGlow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\worldglow\WorldGlow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\particles\Particles_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\particles\Particles_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\BlurVertical_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\BlurVertical_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\SimpleFullscreen_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\BlurHorizontal_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\SimpleFullscreen_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\postprocessing\BlurHorizontal_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\terrain\Terrain_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\terrain\Terrain_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\BitmapFont_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\gui\BitmapFont_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\water\Water_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\water\Water_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\weather\rain\Rain_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\weather\rain\Rain_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\explosion.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\explosion.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\fireline.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\glow_fence.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\rain.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\street_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\street_color.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\street_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\street_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\aufhang_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\big_rock_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\big_rock_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\brake_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\brake_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_aufhang_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_building_hotel_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_building_hotel_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_fence_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_fence_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\grid_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\grid_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\lightmarker.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\lightmarker_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\sand_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\sand_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\side_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\side_color_desert_1.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\side_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\stone_around_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\stone_around_normals.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\street_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\street_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\street_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\tribune_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\tribune_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\font\abel_bold.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\font\abel_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\gui\bar_back.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\gui\bar_front.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\gui\gui.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\brick2_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\brick_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\collision.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_back.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_down.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_front.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_left.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_right.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap2_top.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_back.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_down.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_front.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_left.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_right.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap3_top.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_back.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_down.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_front.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_left.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_right.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cubemap_top.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\cube_sides.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\gear_ring_light.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\marble_texture.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\marble_texture_red.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\mstein_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\palm.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\relief_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\rock.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\rock_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\single_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_BK.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_DN.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_FR.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_LF.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_RT.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStormSmall_UP.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_FR.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_BK.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_LF.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_RT.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_UP.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Epic_CentreOfTheStorm_DN.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_BK.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_DN.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_FR.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_LF.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_RT.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\sky5_UP.jpg
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_BK.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_DN.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_FR.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_LF.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_RT.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Cam_UP.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_BK.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_DN.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_FR.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_LF.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_RT.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\skybox\Sky_Day Sun High SummerSky_Small_UP.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\stone_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\street_color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\street_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\terrain.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\test.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\test2.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\test_hall.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\water_normal.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\white_marble.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\wobble.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fish1color.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fish1normal.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\glow_tale.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\glow_fence_pfeiler.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\glow_fence_planke.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\pfeiler.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\pfeiler_boden.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\pfeiler_track.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\sidebridge.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\course1\wall_new.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_aufhang.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_building_hotel.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_fence.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_landscape.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_lightmarker_inner.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_lightmarker_outer.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\desert_rock_tunnel.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\rock.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\stone_around.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\desert_course\tribune.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\font\abel_bold.fnt
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\font\abel_normal.fnt
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\accelerator.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\accelerator_arrow.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\cube.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\cubesimple.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\cylinder.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\gear_light.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\gear_ring.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\gear_ring_light.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\mstein.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\round_stone.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\ship.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\solid_cylinder_small.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\test_hall.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\tunnel.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\wall_standart.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\back1.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\head1.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\mid1.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\vehicle\GlowTale_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\vehicle\GlowTale_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\lv1.exe.config
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\lv1.exe
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\Engine.dll
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\Newtonsoft.Json.dll
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\Engine.pdb
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\Newtonsoft.Json.xml
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\obj\Release\example_project.csprojResolveAssemblyReference.cache
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\obj\Release\lv1.exe
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\obj\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\FullscreenIBL_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\FullscreenIBL_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\lights\DeferredNull_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\lights\DeferredSphereLight_FS_mitirridiance.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\lights\DeferredSphereLight_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\lights\DeferredNull_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\lights\DeferredSphereLight_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\world\DeferredWorld_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\deferred\world\DeferredWorld_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\skyboxmaterial\Skybox_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\material\skyboxmaterial\Skybox_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\additional_fallback.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\ibl_brdf_lut.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\normal_fallback.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\no_shadow.png
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\textures\no_shadow.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fire_additional.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fire_color.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fish1color.tif
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\objects\0_light.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\data\vehicles\fire.obj
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgimin\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\textures\test.png
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\textures\test2.png
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\textures\wobble.png
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\Engine.dll
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\Engine.pdb
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Release\example_project.csprojResolveAssemblyReference.cache
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Release\lv1.exe
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\lv1.exe.config
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\lv1.exe
+C:\Users\Lars Mohrmann\Desktop\lv3\example_project\bin\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\textures\test.png
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\textures\test2.png
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\textures\wobble.png
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\lv1.exe.config
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\lv1.exe
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\Engine.dll
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\Engine.pdb
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\example_project.csprojResolveAssemblyReference.cache
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\lv1.exe
+C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\test.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\test2.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\wobble.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\lv1.exe.config
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\lv1.exe
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\lv1.pdb
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\Engine.dll
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\Engine.pdb
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\example_project.csprojResolveAssemblyReference.cache
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\lv1.exe
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\lv1.pdb
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\test.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\test2.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\wobble.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\lv1.exe.config
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\lv1.exe
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\lv1.pdb
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\Engine.dll
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\Engine.pdb
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\obj\Release\example_project.csprojAssemblyReference.cache
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\obj\Release\example_project.csproj.CopyComplete
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\obj\Release\lv1.exe
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\obj\Release\lv1.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\textures\simple_reflection.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\textures\test.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\textures\test2.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\textures\wobble.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\objects\monkey.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\objects\torus_flat.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\objects\torus_smooth.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\objects\wobble.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\data\objects\wobble_subdivide.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.exe.config
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.exe
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\lv1.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\Engine.dll
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Release\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csprojAssemblyReference.cache
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\example_project.csproj.CopyComplete
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\lv1.exe
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Release\lv1.pdb
