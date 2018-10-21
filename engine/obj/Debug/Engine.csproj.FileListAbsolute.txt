@@ -28,3 +28,23 @@ C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\engine.csprojResolveAssembly
 C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
 C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\Engine.dll
 C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\Engine.dll
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.dll
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.xml
+C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CopyComplete
+C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.dll
+C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csprojAssemblyReference.cache

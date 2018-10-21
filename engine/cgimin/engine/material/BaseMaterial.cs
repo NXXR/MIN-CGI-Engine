@@ -17,14 +17,15 @@ namespace cgimin.engine.material
         {
 
             // shader files are read (text)
-            string vs = File.ReadAllText(pathVS);
-            string fs = File.ReadAllText(pathFS);
+            string vs = File.ReadAllText(pathVS, System.Text.Encoding.UTF8);
+            string fs = File.ReadAllText(pathFS, System.Text.Encoding.UTF8);
 
             int status_code;
             string info;
 
             // vertex and fragment shaders are created
             VertexObject = GL.CreateShader(ShaderType.VertexShader);
+
             FragmentObject = GL.CreateShader(ShaderType.FragmentShader);
 
             // compiling vertex-shader 

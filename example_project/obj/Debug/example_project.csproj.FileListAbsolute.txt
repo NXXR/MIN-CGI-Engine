@@ -57,3 +57,40 @@ C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Debug\example_project.csp
 C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Debug\example_project.csproj.CoreCompileInputs.cache
 C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Debug\lv1.exe
 C:\Users\Lars Mohrmann\Desktop\lv3\example_project\obj\Debug\lv1.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\shadow_color.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\simple_reflection.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\tennis_ball.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\tennis_field.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\test.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\test2.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\wobble.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\monkey.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\tennis_arena.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\tennis_ball.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\torus_flat.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\torus_smooth.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\wobble.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\wobble_subdivide.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\lv1.exe.config
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\lv1.exe
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\lv1.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\Engine.dll
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\OpenTK.dll
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\OpenTK.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\OpenTK.xml
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\example_project.csprojAssemblyReference.cache
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\example_project.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\example_project.csproj.CopyComplete
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\lv1.exe
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\lv1.pdb
