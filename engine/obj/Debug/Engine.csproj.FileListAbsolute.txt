@@ -48,3 +48,5 @@ C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CopyComplet
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.dll
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.pdb
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csprojAssemblyReference.cache
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_VS.glsl

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="cgimin\engine\camera\Camera.cs" />
     <Compile Include="cgimin\engine\light\Light.cs" />
+    <Compile Include="cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecularMaterial.cs" />
     <Compile Include="cgimin\engine\material\ambientdiffuse\AmbientDiffuseMaterial.cs" />
     <Compile Include="cgimin\engine\material\BaseMaterial.cs" />
     <Compile Include="cgimin\engine\material\simplereflection\SimpleReflectionMaterial.cs" />
@@ -59,6 +60,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="cgimin\engine\material\ambientdiffuse\AmbientDiffuse_FS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

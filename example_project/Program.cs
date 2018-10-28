@@ -38,7 +38,7 @@ namespace Examples.Tutorial
         private CameraMode cameraMode;
 
         // Constants
-        private const float BALL_RADIUS = 0.01f;
+        private const float BALL_RADIUS = 0.1f;
         private const float FIELD_X_BORDER = 2.65835f;
         private const float FIELD_Z_BORDER = 1.39379f;
         private const float GRAVITY = 0.0004f;
@@ -54,6 +54,7 @@ namespace Examples.Tutorial
         private int shadowTexture;
 
         // Materials
+        private AmbientDiffuseSpecularMaterial ambientDiffuseSpecularMaterial;
         private AmbientDiffuseMaterial ambientDiffuseMaterial;
         private SimpleTextureMaterial simpleTextureMaterial;
 
@@ -92,8 +93,6 @@ namespace Examples.Tutorial
         }
         
 
-
-
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -103,7 +102,7 @@ namespace Examples.Tutorial
             Camera.SetWidthHeightFov(800, 600, 60);
 
             // Initialize Light
-            Light.SetDirectionalLight(new Vector3(0.5f, 1, 0), new Vector4(0.1f, 0.1f, 0.1f, 0), new Vector4(1, 1, 1, 0));
+            Light.SetDirectionalLight(new Vector3(1.0f, 1.0f, 0), new Vector4(0.3f, 0.3f, 0.3f, 0), new Vector4(1, 1, 1, 0), new Vector4(1, 1, 1, 0));
 
             // Loading the object
             tennisBallObject = new ObjLoaderObject3D("data/objects/tennis_ball.obj");
@@ -115,6 +114,7 @@ namespace Examples.Tutorial
             shadowTexture = TextureManager.LoadTexture("data/textures/shadow_color.png");
 
             // initialize material
+            ambientDiffuseSpecularMaterial = new AmbientDiffuseSpecularMaterial();
             ambientDiffuseMaterial = new AmbientDiffuseMaterial();
             simpleTextureMaterial = new SimpleTextureMaterial();
 
@@ -231,7 +231,7 @@ namespace Examples.Tutorial
             tennisBallObject.Transformation *= Matrix4.CreateTranslation(ballPositionX, ballPositionY, ballPositionZ);
 
             // draw the ball
-            ambientDiffuseMaterial.Draw(tennisBallObject, tennisBallTexture);
+            ambientDiffuseSpecularMaterial.Draw(tennisBallObject, tennisBallTexture, 10.0f);
 
 
             // ----------------------------------------------------------------------
