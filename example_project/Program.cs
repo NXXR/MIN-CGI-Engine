@@ -17,6 +17,7 @@ using cgimin.engine.camera;
 using cgimin.engine.material.ambientdiffuse;
 using cgimin.engine.light;
 using OpenTK.Input;
+using cgimin.engine.material.zbuffershader;
 
 #endregion --- Using Directives ---
 
@@ -57,6 +58,7 @@ namespace Examples.Tutorial
         private AmbientDiffuseSpecularMaterial ambientDiffuseSpecularMaterial;
         private AmbientDiffuseMaterial ambientDiffuseMaterial;
         private SimpleTextureMaterial simpleTextureMaterial;
+        private ZBufferMaterial zBufferMaterial;
 
         // the ball coordinates
         private float ballPositionX;
@@ -117,6 +119,7 @@ namespace Examples.Tutorial
             ambientDiffuseSpecularMaterial = new AmbientDiffuseSpecularMaterial();
             ambientDiffuseMaterial = new AmbientDiffuseMaterial();
             simpleTextureMaterial = new SimpleTextureMaterial();
+            zBufferMaterial = new ZBufferMaterial();
 
             // enebale z-buffer
             GL.Enable(EnableCap.DepthTest);
@@ -208,7 +211,7 @@ namespace Examples.Tutorial
             // ----------------------------------------------------------------------
             // draw the arena
             // ----------------------------------------------------------------------
-            ambientDiffuseMaterial.Draw(tennisArenaObject, tennisArenaTexture);
+            zBufferMaterial.Draw(tennisArenaObject);
 
 
             // ----------------------------------------------------------------------
@@ -231,7 +234,7 @@ namespace Examples.Tutorial
             tennisBallObject.Transformation *= Matrix4.CreateTranslation(ballPositionX, ballPositionY, ballPositionZ);
 
             // draw the ball
-            ambientDiffuseSpecularMaterial.Draw(tennisBallObject, tennisBallTexture, 10.0f);
+            zBufferMaterial.Draw(tennisBallObject);
 
 
             // ----------------------------------------------------------------------
