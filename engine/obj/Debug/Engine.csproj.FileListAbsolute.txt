@@ -72,3 +72,7 @@ C:\Users\grafiklabor\Documents\cgimin-18-19\engine\obj\Debug\Engine.dll
 C:\Users\grafiklabor\Documents\cgimin-18-19\engine\obj\Debug\Engine.pdb
 C:\Users\grafiklabor\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_FS.glsl
 C:\Users\grafiklabor\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_VS.glsl

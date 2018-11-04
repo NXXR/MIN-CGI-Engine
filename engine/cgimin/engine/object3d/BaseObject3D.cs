@@ -16,13 +16,15 @@ namespace cgimin.engine.object3d
         public List<Vector3> Positions;
         public List<Vector3> Normals;
         public List<Vector2> UVs;
+        public List<Vector3> Tangents;
+        public List<Vector3> BiTangents;
 
         // the index-List
         public List<int> Indices;
 
         // Vartex-Array-Object "VAO"
         public int Vao;
-      
+
         // generates the Vartex-Array-Objekt
         public void CreateVAO()
         {
@@ -30,7 +32,8 @@ namespace cgimin.engine.object3d
             List<float> allData = new List<float>();
 
             // "interleaved" means position, normal and uv in one block for each vertex
-            for (int i = 0; i < Positions.Count; i++) {
+            for (int i = 0; i < Positions.Count; i++)
+            {
 
                 allData.Add(Positions[i].X);
                 allData.Add(Positions[i].Y);
@@ -42,6 +45,14 @@ namespace cgimin.engine.object3d
 
                 allData.Add(UVs[i].X);
                 allData.Add(UVs[i].Y);
+
+                allData.Add(Tangents[i].X);
+                allData.Add(Tangents[i].Y);
+                allData.Add(Tangents[i].Z);
+
+                allData.Add(BiTangents[i].X);
+                allData.Add(BiTangents[i].Y);
+                allData.Add(BiTangents[i].Z);
             }
 
             // generate the VBO for the "interleaved" data
@@ -52,7 +63,7 @@ namespace cgimin.engine.object3d
             GL.BindBuffer(BufferTarget.ArrayBuffer, allBufferVBO);
 
             // Data is uploaded to graphics memory
-            GL.BufferData(BufferTarget.ArrayBuffer, (IntPtr)(allData.Count  * sizeof(float)), allData.ToArray(), BufferUsageHint.StaticDraw);
+            GL.BufferData(BufferTarget.ArrayBuffer, (IntPtr)(allData.Count * sizeof(float)), allData.ToArray(), BufferUsageHint.StaticDraw);
 
             // BindBuffer to 0, so the following commands do not overwrite the current vbo (state machine)
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
@@ -70,7 +81,7 @@ namespace cgimin.engine.object3d
 
             // BindBuffer to 0, so the following commands do not overwrite the current element buffer (state machine)
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
-            
+
 
             // generating the Vertex-Array-Objects
             GL.GenVertexArrays(1, out Vao);
@@ -89,25 +100,30 @@ namespace cgimin.engine.object3d
             GL.EnableVertexAttribArray(0);
             GL.EnableVertexAttribArray(1);
             GL.EnableVertexAttribArray(2);
+            GL.EnableVertexAttribArray(3);
+            GL.EnableVertexAttribArray(4);
 
             // The description of our "interleaved" data structure, the shader needs to know how tpo handle our data
             // Die assignment to the "Index", the first parameter, will be recognized by the shader
-            
+            int strideSize = Vector3.SizeInBytes * 4 + Vector2.SizeInBytes;
+
             // At Index 0 (so at first) we have our position data. The last parameter defines at which byte-place in the vertex block the data for the position is saved 
-            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, true, Vector3.SizeInBytes + Vector3.SizeInBytes + Vector2.SizeInBytes, 0);
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, true, strideSize, 0);
 
             // At Index 1 we have our normal data. We have it after the position, which is a "Vector3" type, so the byte-place is "Vector3.SizeInBytes"
-            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, true, Vector3.SizeInBytes + Vector3.SizeInBytes + Vector2.SizeInBytes, Vector3.SizeInBytes);
+            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, true, strideSize, Vector3.SizeInBytes);
 
             // At Index 2 we have our UV data. We have it after the position and the normal, which are both "Vector3" type, so the byte-place is "Vector3.SizeInBytes" * 2
-            GL.VertexAttribPointer(2, 2, VertexAttribPointerType.Float, true, Vector3.SizeInBytes + Vector3.SizeInBytes + Vector2.SizeInBytes, Vector3.SizeInBytes * 2);
+            GL.VertexAttribPointer(2, 2, VertexAttribPointerType.Float, true, strideSize, Vector3.SizeInBytes * 2);
+
+            // At Index 3 tangents.
+            GL.VertexAttribPointer(3, 3, VertexAttribPointerType.Float, true, strideSize, Vector3.SizeInBytes * 2 + Vector2.SizeInBytes);
+
+            // At Index 4 biTangents.
+            GL.VertexAttribPointer(4, 3, VertexAttribPointerType.Float, true, strideSize, Vector3.SizeInBytes * 3 + Vector2.SizeInBytes);
 
             // BindBuffer to 0, so the following commands do not overwrite the current VAO
             GL.BindVertexArray(0);
-
-
-            // Note: Das generierte VAO gibt eine Datenstruktur vor, die auch vom Shader berücksichtigt werden muss bezüglich der per GL.VertexAttribPointer definierten Index-Stellen.
-            // Das Datenformat Position an Stelle 0, Normale an Stelle 1, und UV an Stelle 2 sollte also in dieser Form von unseren Shadern benutzt werden.
 
             // Note: The generated VAO defines a data-structure, which must be considered by the shader regarding the index-places defined by GL.VertexAttribPointer 
             // The data-format placing 0 = position; 1 = normal and 2 = uv must be used by our materials
@@ -132,11 +148,77 @@ namespace cgimin.engine.object3d
             UVs.Add(uv2);
             UVs.Add(uv3);
 
+
+            // calculate tangents / bi-tangents
+            Vector3 edge1 = v2 - v1;
+            Vector3 edge2 = v3 - v1;
+
+            Vector2 deltaUV1 = uv2 - uv1;
+            Vector2 deltaUV2 = uv3 - uv1;
+
+            float f;
+            if (Math.Abs(deltaUV1.X * deltaUV2.Y - deltaUV2.X * deltaUV1.Y) < 0.0001f)
+            {
+                f = 1.0f;
+            }
+            else
+            {
+                f = 1.0f / (deltaUV1.X * deltaUV2.Y - deltaUV2.X * deltaUV1.Y);
+            }
+
+            Vector3 tangent = new Vector3(f * (deltaUV2.Y * edge1.X - deltaUV1.Y * edge2.X),
+                                          f * (deltaUV2.Y * edge1.Y - deltaUV1.Y * edge2.Y),
+                                          f * (deltaUV2.Y * edge1.Z - deltaUV1.Y * edge2.Z));
+            tangent.Normalize();
+
+            Vector3 biTangent = new Vector3(f * (-deltaUV2.X * edge1.X + deltaUV1.X * edge2.X),
+                                            f * (-deltaUV2.X * edge1.Y + deltaUV1.X * edge2.Y),
+                                            f * (-deltaUV2.X * edge1.Z + deltaUV1.X * edge2.Z));
+            biTangent.Normalize();
+
+
+            if (Vector3.Dot(Vector3.Cross(n1, tangent), biTangent) < 0.0f)
+            {
+                tangent = tangent * -1.0f;
+            }
+
+
+            Tangents.Add(tangent);
+            Tangents.Add(tangent);
+            Tangents.Add(tangent);
+
+            BiTangents.Add(biTangent);
+            BiTangents.Add(biTangent);
+            BiTangents.Add(biTangent);
+
             Indices.Add(index);
             Indices.Add(index + 2);
             Indices.Add(index + 1);
         }
 
+
+        public void AverageTangents()
+        {
+            int len = Positions.Count;
+
+            for (int i = 0; i < len - 1; i++)
+            {
+                for (int o = i + 1; o < len; o++)
+                {
+
+                    if (Positions[i] == Positions[o] && Normals[i] == Normals[o] && UVs[i] == UVs[o])
+                    {
+                        Vector3 tanI = Tangents[i];
+                        Tangents[i] += Tangents[o];
+                        Tangents[o] += tanI;
+
+                        Vector3 biTanI = BiTangents[i];
+                        BiTangents[i] += BiTangents[o];
+                        BiTangents[o] += biTanI;
+                    }
+                }
+            }
+        }
 
         // unloads from graphics memory
         public void UnLoad()

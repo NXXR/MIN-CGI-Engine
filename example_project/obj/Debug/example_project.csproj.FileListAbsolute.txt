@@ -135,3 +135,16 @@ C:\Users\grafiklabor\Documents\cgimin-18-19\example_project\bin\Debug\OpenTK.xml
 C:\Users\grafiklabor\Documents\cgimin-18-19\example_project\obj\Debug\example_project.csprojResolveAssemblyReference.cache
 C:\Users\grafiklabor\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_FS.glsl
 C:\Users\grafiklabor\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\blue_towel.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\brick_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\primitives_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\relief_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\sofa_pattern_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\cube.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\abstract_statue.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\objects\sphere.obj
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\single_color.png

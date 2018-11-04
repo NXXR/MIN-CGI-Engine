@@ -1,8 +1,11 @@
 ﻿using System;
-using System.IO;
-using System.Diagnostics;
+using cgimin.engine.camera;
+using cgimin.engine.object3d;
+using cgimin.engine.light;
 using OpenTK;
+using OpenTK.Graphics.OpenGL;
 using System.Collections.Generic;
+using System.IO;
 using System.Globalization;
 
 namespace cgimin.engine.object3d
@@ -10,12 +13,14 @@ namespace cgimin.engine.object3d
     public class ObjLoaderObject3D : BaseObject3D
     {
 
-        public ObjLoaderObject3D(String filePath)
+        public ObjLoaderObject3D(String filePath, float scale = 1.0f, bool doAverageTangets = false)
         {
 
             Positions = new List<Vector3>();
             Normals = new List<Vector3>();
             UVs = new List<Vector2>();
+            Tangents = new List<Vector3>();
+            BiTangents = new List<Vector3>();
             Indices = new List<int>();
 
             List<Vector3> v = new List<Vector3>();
@@ -30,7 +35,7 @@ namespace cgimin.engine.object3d
 
                 if (parts.Length > 0)
                 {
-                    if (parts[0] == "v")   v.Add(new Vector3(float.Parse(parts[1], CultureInfo.InvariantCulture), float.Parse(parts[2], CultureInfo.InvariantCulture), float.Parse(parts[3], CultureInfo.InvariantCulture)));
+                    if (parts[0] == "v") v.Add(new Vector3(float.Parse(parts[1], CultureInfo.InvariantCulture) * scale, float.Parse(parts[2], CultureInfo.InvariantCulture) * scale, float.Parse(parts[3], CultureInfo.InvariantCulture) * scale));
                     if (parts[0] == "vt") vt.Add(new Vector2(float.Parse(parts[1], CultureInfo.InvariantCulture), 1.0f - float.Parse(parts[2], CultureInfo.InvariantCulture)));
                     if (parts[0] == "vn") vn.Add(new Vector3(float.Parse(parts[1], CultureInfo.InvariantCulture), float.Parse(parts[2], CultureInfo.InvariantCulture), float.Parse(parts[3], CultureInfo.InvariantCulture)));
 
@@ -40,7 +45,7 @@ namespace cgimin.engine.object3d
                         string[] triIndicesV2 = parts[2].Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                         string[] triIndicesV3 = parts[3].Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 
-                        addTriangle( v[Convert.ToInt32(triIndicesV1[0]) - 1],  v[Convert.ToInt32(triIndicesV2[0]) - 1],  v[Convert.ToInt32(triIndicesV3[0]) - 1],
+                        addTriangle(v[Convert.ToInt32(triIndicesV1[0]) - 1], v[Convert.ToInt32(triIndicesV2[0]) - 1], v[Convert.ToInt32(triIndicesV3[0]) - 1],
                                     vn[Convert.ToInt32(triIndicesV1[2]) - 1], vn[Convert.ToInt32(triIndicesV2[2]) - 1], vn[Convert.ToInt32(triIndicesV3[2]) - 1],
                                     vt[Convert.ToInt32(triIndicesV1[1]) - 1], vt[Convert.ToInt32(triIndicesV2[1]) - 1], vt[Convert.ToInt32(triIndicesV3[1]) - 1]);
 
@@ -48,9 +53,7 @@ namespace cgimin.engine.object3d
                 }
             }
 
-            //CreatePositionBuffer();
-            //CreateUVBuffer();
-            //CreateIndexBuffer();
+            if (doAverageTangets == true) AverageTangents();
 
             CreateVAO();
 
