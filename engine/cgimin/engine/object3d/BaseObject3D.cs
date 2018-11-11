@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
+using cgimin.engine.camera;
 
 namespace cgimin.engine.object3d
 {
@@ -25,6 +26,9 @@ namespace cgimin.engine.object3d
         // Vartex-Array-Object "VAO"
         public int Vao;
 
+        // object radius
+        private float radius;
+
         // generates the Vartex-Array-Objekt
         public void CreateVAO()
         {
@@ -32,8 +36,12 @@ namespace cgimin.engine.object3d
             List<float> allData = new List<float>();
 
             // "interleaved" means position, normal and uv in one block for each vertex
+
+            float sqrRadiusMax = 0.0f;
             for (int i = 0; i < Positions.Count; i++)
             {
+                float sqrRadius = Positions[i].LengthSquared;
+                if (sqrRadius > sqrRadiusMax) sqrRadiusMax = sqrRadius;
 
                 allData.Add(Positions[i].X);
                 allData.Add(Positions[i].Y);
@@ -54,6 +62,9 @@ namespace cgimin.engine.object3d
                 allData.Add(BiTangents[i].Y);
                 allData.Add(BiTangents[i].Z);
             }
+
+            // radius is calculated from the squaredRadius
+            radius = (float)Math.Sqrt(sqrRadiusMax);
 
             // generate the VBO for the "interleaved" data
             int allBufferVBO;
@@ -220,6 +231,18 @@ namespace cgimin.engine.object3d
             }
         }
 
+        // checks whether object is in view frustum
+        public bool IsInView()
+        {
+            Vector3 pos = new Vector3(Transformation.M41, Transformation.M42, Transformation.M43);
+            if (Camera.SphereIsInFrustum(pos, radius))
+            {
+                return true;
+            }
+            return false;
+        }
+
+
         // unloads from graphics memory
         public void UnLoad()
         {
@@ -229,8 +252,6 @@ namespace cgimin.engine.object3d
 
 
 
-
-
-
     }
 }
+

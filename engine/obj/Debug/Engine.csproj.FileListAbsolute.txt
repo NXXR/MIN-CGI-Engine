@@ -76,3 +76,7 @@ C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zb
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\zbuffershader\ZBuffer_VS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_FS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_VS.glsl
