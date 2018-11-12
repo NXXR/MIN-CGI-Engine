@@ -15,16 +15,16 @@ uniform mat4 modelview_projection_matrix;
 // "model_matrix" wird als Parameter erwartet, vom Typ Matrix4 
 uniform mat4 model_matrix;
 
-// Kamera-Position wird übergeben
+// Kamera-Position wird uebergeben
 uniform vec4 camera_position;
 
 // "texcoord" wird an den Fragment-Shader weitergegeben, daher als "out" deklariert
 out vec2 fragTexcoord;
 
-// die Blickrichtung wird dem Fragment-Shader übergeben
+// die Blickrichtung wird dem Fragment-Shader uebergeben
 out vec3 fragV;
 
-// die TBN-Matrix wird an den Fragment-Shader übergeben
+// die TBN-Matrix wird an den Fragment-Shader uebergeben
 out mat3 fragTBN;
 
 void main()

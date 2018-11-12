@@ -14,16 +14,16 @@ uniform mat4 modelview_projection_matrix;
 // Die "Model-Matrix" wird als Parameter erwaretet, um die TBN-Matrix in den World-Space zu transformieren
 uniform mat4 model_matrix;
 
-// Kamera-Position wird übergeben
+// Kamera-Position wird uebergeben
 uniform vec4 camera_position;
 
 // "texcoord" wird an den Fragment-Shader weitergegeben, daher als "out" deklariert
 out vec2 fragTexcoord;
 
-// die Blickrichtung wird dem Fragment-Shader übergeben
+// die Blickrichtung wird dem Fragment-Shader uebergeben
 out vec3 fragV;
 
-// die TBN-Matrix wird an den Fragment-Shader übergeben
+// die TBN-Matrix wird an den Fragment-Shader uebergeben
 out mat3 fragTBN;
 
 void main()
@@ -36,7 +36,7 @@ void main()
 	// "in_uv" (Texturkoordinate) wird direkt an den Fragment-Shader weitergereicht.
 	fragTexcoord = in_uv;
 
-	// position übergeben
+	// position uebergeben
 	fragV = normalize(model_matrix *  vec4(in_position,1) - camera_position).xyz;
 
 	// in gl_Position die finalan Vertex-Position geschrieben ("modelview_projection_matrix" * "in_position")
