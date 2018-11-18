@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cgimin\engine\camera\Camera.cs" />
+    <Compile Include="cgimin\engine\helpers\Helpers.cs" />
+    <Compile Include="cgimin\engine\helpers\ShaderCompiler.cs" />
     <Compile Include="cgimin\engine\light\Light.cs" />
     <Compile Include="cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecularMaterial.cs" />
     <Compile Include="cgimin\engine\material\ambientdiffuse\AmbientDiffuseMaterial.cs" />
@@ -52,6 +54,7 @@
     <Compile Include="cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal.cs" />
     <Compile Include="cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecularMaterial.cs" />
     <Compile Include="cgimin\engine\material\normalmapping\NormalMappingMaterial.cs" />
+    <Compile Include="cgimin\engine\material\simpleblend\SimpleBlendMaterial.cs" />
     <Compile Include="cgimin\engine\material\zbuffershader\ZBufferMaterial.cs" />
     <Compile Include="cgimin\engine\material\simplereflection\SimpleReflectionMaterial.cs" />
     <Compile Include="cgimin\engine\material\simpletexture\SimpleTextureMaterial.cs" />
@@ -60,6 +63,9 @@
     <Compile Include="cgimin\engine\object3d\BaseObject3D.cs" />
     <Compile Include="cgimin\engine\object3d\CubeObject3D.cs" />
     <Compile Include="cgimin\engine\object3d\ObjLoaderObject3D.cs" />
+    <Compile Include="cgimin\engine\octree\Octree.cs" />
+    <Compile Include="cgimin\engine\octree\OctreeEntity.cs" />
+    <Compile Include="cgimin\engine\terrain\Terrain.cs" />
     <Compile Include="cgimin\engine\texture\TextureManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +100,12 @@
     <None Include="cgimin\engine\material\normalmapping\NormalMapping_VS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="cgimin\engine\material\simpleblend\Simple_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\material\simpleblend\Simple_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="cgimin\engine\material\zbuffershader\ZBuffer_FS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -122,6 +134,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cgimin\engine\material\wobble2\Wobble2_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\terrain\Terrain_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\terrain\Terrain_VS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="OpenTK.dll.config" />

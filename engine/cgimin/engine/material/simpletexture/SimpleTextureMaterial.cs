@@ -22,7 +22,7 @@ namespace cgimin.engine.material.simpletexture
             GL.BindAttribLocation(Program, 0, "in_position");
             GL.BindAttribLocation(Program, 1, "in_normal");
             GL.BindAttribLocation(Program, 2, "in_uv");
-            
+
             // ...bevor das Shader-Programm "gelinkt" wird.
             GL.LinkProgram(Program);
 
@@ -53,6 +53,14 @@ namespace cgimin.engine.material.simpletexture
             // Das Objekt wird gezeichnet
             GL.DrawElements(PrimitiveType.Triangles, object3d.Indices.Count, DrawElementsType.UnsignedInt, IntPtr.Zero);
 
+            GL.BindVertexArray(0);
+        }
+
+
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.colorTexture);
         }
 
 

@@ -66,6 +66,12 @@ namespace cgimin.engine.material.zbuffershader
         }
 
 
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d);
+        }
+
 
     }
 }

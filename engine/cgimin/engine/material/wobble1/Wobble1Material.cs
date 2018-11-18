@@ -53,9 +53,15 @@ namespace cgimin.engine.material.wobble1
             // Das Objekt wird gezeichnet
             GL.DrawElements(PrimitiveType.Triangles, object3d.Indices.Count, DrawElementsType.UnsignedInt, IntPtr.Zero);
 
+            GL.BindVertexArray(0);
         }
 
 
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.colorTexture);
+        }
 
     }
 }

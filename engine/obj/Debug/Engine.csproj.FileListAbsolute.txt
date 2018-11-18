@@ -80,3 +80,7 @@ C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\cu
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_VS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_FS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl

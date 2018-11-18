@@ -168,3 +168,7 @@ C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\en
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\env_reflect_top.png
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\marble_blue.png
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\stone_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl

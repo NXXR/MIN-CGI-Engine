@@ -91,6 +91,13 @@ namespace cgimin.engine.material.cubereflectionnormal
         }
 
 
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.normalTexture, settings.cubeTexture);
+        }
+
+
 
     }
 }

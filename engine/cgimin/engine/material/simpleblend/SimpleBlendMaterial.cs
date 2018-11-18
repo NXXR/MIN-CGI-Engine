@@ -1,25 +1,22 @@
-﻿using System;
-using OpenTK.Graphics.OpenGL;
+﻿using cgimin.engine.material;
 using cgimin.engine.object3d;
+using System;
+using OpenTK.Graphics.OpenGL;
 using OpenTK;
 using cgimin.engine.camera;
 
-namespace cgimin.engine.material.wobble1
+namespace Engine.cgimin.engine.material.simpleblend
 {
-    public class Wobble2Material : BaseMaterial
+    public class SimpleBlendMaterial : BaseMaterial
     {
 
         private int modelviewProjectionMatrixLocation;
-        private int wobbleValueLocation;
 
-        private int drawUpdate;
-
-        public Wobble2Material()
+        public SimpleBlendMaterial()
         {
-
-            // Shader-Programm wird aus den externen Files generiert...
-            CreateShaderProgram("cgimin/engine/material/wobble2/Wobble2_VS.glsl",
-                                "cgimin/engine/material/wobble2/Wobble2_FS.glsl");
+            // Shader-Programm loaded from external files
+            CreateShaderProgram("cgimin/engine/material/simpleblend/Simple_VS.glsl",
+                                "cgimin/engine/material/simpleblend/Simple_FS.glsl");
 
             // GL.BindAttribLocation, gibt an welcher Index in unserer Datenstruktur welchem "in" Parameter auf unserem Shader zugeordnet wird
             // folgende Befehle müssen aufgerufen werden...
@@ -33,15 +30,15 @@ namespace cgimin.engine.material.wobble1
             // Die Stelle an der im Shader der per "uniform" der Input-Paremeter "modelview_projection_matrix" definiert wird, wird ermittelt.
             modelviewProjectionMatrixLocation = GL.GetUniformLocation(Program, "modelview_projection_matrix");
 
-            // Die Stelle an der im Shader per "uniform" der "wobbleValue" Parameter definiert wird, wird ermittelt.
-            wobbleValueLocation = GL.GetUniformLocation(Program, "wobbleValue");
-
         }
 
-
-        public void Draw(BaseObject3D object3d, int textureID)
+        public void Draw(BaseObject3D object3d, int textureID, BlendingFactor srcBlendFactor, BlendingFactor destBlendFactor)
         {
+            GL.Enable(EnableCap.Blend);
+            GL.BlendFunc(srcBlendFactor, destBlendFactor);
+
             // Textur wird "gebunden"
+            GL.ActiveTexture(TextureUnit.Texture0);
             GL.BindTexture(TextureTarget.Texture2D, textureID);
 
             // das Vertex-Array-Objekt unseres Objekts wird benutzt
@@ -58,26 +55,23 @@ namespace cgimin.engine.material.wobble1
             // Die Matrix wird dem Shader als Parameter übergeben
             GL.UniformMatrix4(modelviewProjectionMatrixLocation, false, ref modelviewProjection);
 
-            drawUpdate++;  // updates gehören nicht in Draw :o 
-
-            // der Shader-Parameter "wobbleValue" wird dem Shader übergeben. In diesem Fall einfach ein Wert der immer höher gezählt wird.            
-            GL.Uniform1(wobbleValueLocation, drawUpdate / 10.0f);
-
             // Das Objekt wird gezeichnet
             GL.DrawElements(PrimitiveType.Triangles, object3d.Indices.Count, DrawElementsType.UnsignedInt, IntPtr.Zero);
 
             GL.BindVertexArray(0);
+
+            GL.Disable(EnableCap.Blend);
+
         }
 
 
         // implementatin for octree drawing logic
         public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
         {
-            Draw(object3d, settings.colorTexture);
+            Draw(object3d, settings.colorTexture, settings.SrcBlendFactor, settings.DestBlendFactor);
         }
 
-
-
     }
-}
 
+
+}

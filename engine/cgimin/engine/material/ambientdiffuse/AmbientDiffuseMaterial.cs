@@ -71,11 +71,18 @@ namespace cgimin.engine.material.ambientdiffuse
             GL.Uniform4(lightAmbientLocation, Light.lightAmbient);
             GL.Uniform4(lightDiffuseLocation, Light.lightDiffuse);
 
-            // Das Objekt wird gezeichnet
+            // the object is drawn
             GL.DrawElements(PrimitiveType.Triangles, object3d.Indices.Count, DrawElementsType.UnsignedInt, IntPtr.Zero);
 
+            GL.BindVertexArray(0);
         }
 
+
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.colorTexture);
+        }
 
 
     }

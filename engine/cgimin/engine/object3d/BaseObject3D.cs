@@ -27,7 +27,7 @@ namespace cgimin.engine.object3d
         public int Vao;
 
         // object radius
-        private float radius;
+        public float radius;
 
         // generates the Vartex-Array-Objekt
         public void CreateVAO()

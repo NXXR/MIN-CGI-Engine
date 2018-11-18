@@ -108,8 +108,15 @@ namespace cgimin.engine.material.normalmapping
             // Active Textur wieder auf 0, um andere Materialien nicht durcheinander zu bringen
             GL.ActiveTexture(TextureUnit.Texture0);
 
+            GL.BindVertexArray(0);
         }
 
+
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.colorTexture, settings.normalTexture, settings.shininess);
+        }
 
 
     }

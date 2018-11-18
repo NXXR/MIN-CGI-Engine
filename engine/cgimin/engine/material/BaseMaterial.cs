@@ -5,8 +5,22 @@ using System.IO;
 
 namespace cgimin.engine.material
 {
-    public class BaseMaterial
+    public abstract class BaseMaterial
     {
+
+        // struct contains all possible options dor each material 
+        public struct MaterialSettings
+        {
+            public int colorTexture;
+            public int normalTexture;
+            public int cubeTexture;
+            public float shininess;
+
+            // values for blending
+            public BlendingFactor SrcBlendFactor;
+            public BlendingFactor DestBlendFactor;
+        }
+
 
         private int VertexObject;
         private int FragmentObject;
@@ -17,15 +31,14 @@ namespace cgimin.engine.material
         {
 
             // shader files are read (text)
-            string vs = File.ReadAllText(pathVS, System.Text.Encoding.UTF8);
-            string fs = File.ReadAllText(pathFS, System.Text.Encoding.UTF8);
+            string vs = File.ReadAllText(pathVS);
+            string fs = File.ReadAllText(pathFS);
 
             int status_code;
             string info;
 
             // vertex and fragment shaders are created
             VertexObject = GL.CreateShader(ShaderType.VertexShader);
-
             FragmentObject = GL.CreateShader(ShaderType.FragmentShader);
 
             // compiling vertex-shader 
@@ -54,6 +67,11 @@ namespace cgimin.engine.material
             // hint: "Program" is not linked yet
         }
 
+
+
+
+        // abstract, to force each material to implement
+        public abstract void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings);
 
 
     }

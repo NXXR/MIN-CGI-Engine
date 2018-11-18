@@ -112,5 +112,13 @@ namespace cgimin.engine.material.normalmappingcubespecular
 
 
 
+        // implementatin for octree drawing logic
+        public override void DrawWithSettings(BaseObject3D object3d, MaterialSettings settings)
+        {
+            Draw(object3d, settings.colorTexture, settings.normalTexture, settings.cubeTexture);
+        }
+
+
+
     }
 }

@@ -16,6 +16,12 @@ using cgimin.engine.material.normalmapping;
 using cgimin.engine.material.cubereflectionnormal;
 using cgimin.engine.material.normalmappingcubespecular;
 using System.Collections.Generic;
+using cgimin.engine.material.ambientdiffuse;
+using OpenTK.Input;
+using static cgimin.engine.material.BaseMaterial;
+using Engine.cgimin.engine.octree;
+using Engine.cgimin.engine.material.simpleblend;
+using Engine.cgimin.engine.terrain;
 
 #endregion --- Using Directives ---
 
@@ -24,7 +30,7 @@ namespace Examples.Tutorial
 
     public class CubeExample : GameWindow
     {
-        private const int NUMBER_OF_OBJECTS = 200;
+        private const int NUMBER_OF_OBJECTS = 500;
 
         // the objects we load
         private ObjLoaderObject3D cubeObject;
@@ -47,23 +53,17 @@ namespace Examples.Tutorial
         private NormalMappingMaterial normalMappingMaterial;
         private CubeReflectionNormalMaterial cubeReflectionNormalMaterial;
         private NormalMappingCubeSpecularMaterial normalMappingCubeSpecularMaterial;
+        private AmbientDiffuseSpecularMaterial ambientDiffuseSpecularMaterial;
+        private SimpleBlendMaterial simpleBlendMaterial;
 
-        // objects positions
-        private List<Vector3> positions;
+        // Octree
+        private Octree octree;
 
-        // material
-        private int materialSwitch;
+        // Terrain
+        private Terrain terrian;
 
         // global update counter for animations etc.
         private int updateCounter = 0;
-
-        // Keys
-        private bool keyLeft;
-        private bool keyRight;
-        private bool keyUp;
-        private bool keyDown;
-        private bool keyW;
-        private bool keyS;
 
         public CubeExample()
             : base(1280, 720, new GraphicsMode(32, 24, 8, 2), "CGI-MIN Example", GameWindowFlags.Default, DisplayDevice.Default, 3, 0, GraphicsContextFlags.ForwardCompatible | GraphicsContextFlags.Debug)
@@ -105,12 +105,12 @@ namespace Examples.Tutorial
                                                                                 "data/textures/cmap2_back.png", "data/textures/cmap2_front.png"});
 
 
-
-
             // initialize material
             normalMappingMaterial = new NormalMappingMaterial();
             cubeReflectionNormalMaterial = new CubeReflectionNormalMaterial();
             normalMappingCubeSpecularMaterial = new NormalMappingCubeSpecularMaterial();
+            ambientDiffuseSpecularMaterial = new AmbientDiffuseSpecularMaterial();
+            simpleBlendMaterial = new SimpleBlendMaterial();
 
             // enebale z-buffer
             GL.Enable(EnableCap.DepthTest);
@@ -120,16 +120,68 @@ namespace Examples.Tutorial
             GL.CullFace(CullFaceMode.Front);
 
             // set keyboard event
-            this.KeyDown += new EventHandler<OpenTK.Input.KeyboardKeyEventArgs>(KeyDownEvent);
-            this.KeyUp += new EventHandler<OpenTK.Input.KeyboardKeyEventArgs>(KeyUpEvent);
+            this.KeyDown += new EventHandler<KeyboardKeyEventArgs>(KeyDownEvent);
+
+
+            // init matrial settings
+
+            // 'golden brick'
+            MaterialSettings brickGoldSettings = new MaterialSettings();
+            brickGoldSettings.colorTexture = checkerColorTexture;
+            brickGoldSettings.normalTexture = brickNormalTexture;
+            brickGoldSettings.shininess = 10.0f;
+
+            // 'completely mirrored cube'
+            MaterialSettings cubeReflectSettings = new MaterialSettings();
+            cubeReflectSettings.cubeTexture = environmentCubeTexture;
+            cubeReflectSettings.normalTexture = stoneNormalTexture;
+
+            // 'blue shiny stone"
+            MaterialSettings blueShinyStoneSettings = new MaterialSettings();
+            blueShinyStoneSettings.colorTexture = blueMarbleColorTexture;
+            blueShinyStoneSettings.normalTexture = stoneNormalTexture;
+            blueShinyStoneSettings.cubeTexture = darkerEnvCubeTexture;
+
+            // transparent blended material
+            MaterialSettings blendMaterialSettings = new MaterialSettings();
+            blendMaterialSettings.colorTexture = checkerColorTexture;
+            blendMaterialSettings.SrcBlendFactor = BlendingFactor.SrcColor;
+            blendMaterialSettings.DestBlendFactor = BlendingFactor.DstColor;
+
+
+            // Init Octree
+            octree = new Octree(new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
 
             // generate random positions
             Random random = new Random();
-            positions = new List<Vector3>();
-            for (int i = 0; i < NUMBER_OF_OBJECTS; i++)
-                positions.Add(new Vector3(random.Next(-100, 100) / 10.0f, random.Next(-100, 100) / 10.0f, random.Next(-100, 100) / 10.0f));
 
-            materialSwitch = 0;
+            for (int i = 0; i < NUMBER_OF_OBJECTS; i++)
+            {
+                Matrix4 tranlatePos = Matrix4.CreateTranslation(random.Next(-200, 200) / 10.0f, random.Next(-200, 200) / 10.0f, random.Next(-200, 200) / 10.0f);
+
+                int whichObject = random.Next(4);
+
+                switch (whichObject)
+                {
+                    case 0:
+                        octree.AddEntity(new OctreeEntity(smoothObject, normalMappingCubeSpecularMaterial, blueShinyStoneSettings, tranlatePos));
+                        break;
+                    case 1:
+                        octree.AddEntity(new OctreeEntity(cubeObject, cubeReflectionNormalMaterial, cubeReflectSettings, tranlatePos));
+                        break;
+                    case 2:
+                        octree.AddEntity(new OctreeEntity(torusObject, normalMappingMaterial, brickGoldSettings, tranlatePos));
+                        break;
+                    case 3:
+                        octree.AddEntity(new OctreeEntity(cubeObject, simpleBlendMaterial, blendMaterialSettings, tranlatePos));
+                        break;
+
+                }
+            }
+
+            // Init terrain
+            terrian = new Terrain();
+
 
         }
 
@@ -148,33 +200,19 @@ namespace Examples.Tutorial
             }
 
             if (e.Key == OpenTK.Input.Key.Escape) this.Exit();
-            if (e.Key == OpenTK.Input.Key.Number1) materialSwitch = 0;
-            if (e.Key == OpenTK.Input.Key.Number2) materialSwitch = 1;
-            if (e.Key == OpenTK.Input.Key.Number3) materialSwitch = 2;
 
-            if (e.Key == OpenTK.Input.Key.Left) keyLeft = true;
-            if (e.Key == OpenTK.Input.Key.Right) keyRight = true;
-            if (e.Key == OpenTK.Input.Key.Up) keyUp = true;
-            if (e.Key == OpenTK.Input.Key.Down) keyDown = true;
-            if (e.Key == OpenTK.Input.Key.W) keyW = true;
-            if (e.Key == OpenTK.Input.Key.S) keyS = true;
-        }
 
-        private void KeyUpEvent(object sender, OpenTK.Input.KeyboardKeyEventArgs e)
-        {
-            if (e.Key == OpenTK.Input.Key.Left) keyLeft = false;
-            if (e.Key == OpenTK.Input.Key.Right) keyRight = false;
-            if (e.Key == OpenTK.Input.Key.Up) keyUp = false;
-            if (e.Key == OpenTK.Input.Key.Down) keyDown = false;
-            if (e.Key == OpenTK.Input.Key.W) keyW = false;
-            if (e.Key == OpenTK.Input.Key.S) keyS = false;
+
         }
 
 
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
+            KeyboardState keyboardState = Keyboard.GetState();
+
             // update the fly-cam with keyboard input
-            Camera.UpdateFlyCamera(keyLeft, keyRight, keyUp, keyDown, keyW, keyS);
+            Camera.UpdateFlyCamera(keyboardState[Key.Left], keyboardState[Key.Right], keyboardState[Key.Up], keyboardState[Key.Down],
+                                   keyboardState[Key.W], keyboardState[Key.S]);
 
             // updateCounter simply increaes
             updateCounter++;
@@ -187,53 +225,11 @@ namespace Examples.Tutorial
             GL.ClearColor(0.3f, 0.3f, 0.3f, 1.0f);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
-            int objectsInViewCount = 0;
 
-            for (int i = 0; i < NUMBER_OF_OBJECTS; i++)
-            {
-                Matrix4 transform = Matrix4.Identity;
-                transform *= Matrix4.CreateRotationX(updateCounter * 0.015f);
-                transform *= Matrix4.CreateRotationY(updateCounter * 0.01f);
-                transform *= Matrix4.CreateRotationZ(updateCounter * 0.01f);
-                transform *= Matrix4.CreateTranslation(positions[i]);
+            octree.Draw();
 
-                BaseObject3D objectToDraw;
+            //terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
 
-                switch (i % 3)
-                {
-                    case 0:
-                        objectToDraw = cubeObject;
-                        break;
-                    case 1:
-                        objectToDraw = smoothObject;
-                        break;
-                    default:
-                        objectToDraw = torusObject;
-                        break;
-                }
-
-                objectToDraw.Transformation = transform;
-                if (objectToDraw.IsInView())
-                {
-                    objectsInViewCount++;
-
-                    switch (materialSwitch)
-                    {
-                        case 0:
-                            normalMappingMaterial.Draw(objectToDraw, checkerColorTexture, brickNormalTexture, 15.0f);
-                            break;
-                        case 1:
-                            cubeReflectionNormalMaterial.Draw(objectToDraw, brickNormalTexture, environmentCubeTexture);
-                            break;
-                        case 2:
-                            normalMappingCubeSpecularMaterial.Draw(objectToDraw, blueMarbleColorTexture, stoneNormalTexture, darkerEnvCubeTexture);
-                            break;
-                    }
-                }
-
-            }
-
-            Console.WriteLine(objectsInViewCount.ToString());
 
             SwapBuffers();
         }
