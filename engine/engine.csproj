@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cgimin\engine\camera\Camera.cs" />
+    <Compile Include="cgimin\engine\gui\BitmapFont.cs" />
+    <Compile Include="cgimin\engine\gui\BitmapGraphic.cs" />
     <Compile Include="cgimin\engine\helpers\Helpers.cs" />
     <Compile Include="cgimin\engine\helpers\ShaderCompiler.cs" />
     <Compile Include="cgimin\engine\light\Light.cs" />
@@ -71,6 +73,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cgimin\engine\gui\shader\BitmapFont_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\gui\shader\BitmapFont_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\gui\shader\BitmapGraphic_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\gui\shader\BitmapGraphic_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

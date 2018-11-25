@@ -178,3 +178,10 @@ C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lake
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_left.png
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_right.png
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_up.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\fonts\abel_normal.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\fonts\abel_normal.fnt
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\textures\mario_sprite.png

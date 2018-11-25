@@ -84,3 +84,7 @@ C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\si
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl

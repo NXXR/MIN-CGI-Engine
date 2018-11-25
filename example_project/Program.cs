@@ -23,6 +23,7 @@ using Engine.cgimin.engine.octree;
 using Engine.cgimin.engine.material.simpleblend;
 using Engine.cgimin.engine.terrain;
 using cgimin.engine.skybox;
+using cgimin.engine.gui;
 
 #endregion --- Using Directives ---
 
@@ -66,6 +67,9 @@ namespace Examples.Tutorial
         // Skybox
         private SkyBox skyBox;
 
+        // Font
+        private BitmapFont abelFont;
+
 
         // global update counter for animations etc.
         private int updateCounter = 0;
@@ -108,7 +112,6 @@ namespace Examples.Tutorial
             darkerEnvCubeTexture = TextureManager.LoadCubemap(new List<string>{ "data/textures/cmap2_left.png", "data/textures/cmap2_right.png",
                                                                                 "data/textures/cmap2_top.png",  "data/textures/cmap2_bottom.png",
                                                                                 "data/textures/cmap2_back.png", "data/textures/cmap2_front.png"});
-
 
             // initialize material
             normalMappingMaterial = new NormalMappingMaterial();
@@ -156,6 +159,8 @@ namespace Examples.Tutorial
             // Init Skybox
             skyBox = new SkyBox("data/skybox/lakes_front.png", "data/skybox/lakes_back.png", "data/skybox/lakes_left.png", "data/skybox/lakes_right.png", "data/skybox/lakes_up.png", "data/skybox/lakes_down.png");
 
+            // Loaf Font
+            abelFont = new BitmapFont("data/fonts/abel_normal.fnt", "data/fonts/abel_normal.png");
 
             // Init Octree
             octree = new Octree(new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
@@ -238,6 +243,9 @@ namespace Examples.Tutorial
 
             octree.Draw();
             terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
+
+ 
+            abelFont.DrawString("Hallo, wie geht es und JJJjj y Uu_y", -1920 * 0.5f, -1080.0f * 0.5f,   255, 255, 255, 255);
 
             SwapBuffers();
         }
