@@ -22,6 +22,7 @@ using static cgimin.engine.material.BaseMaterial;
 using Engine.cgimin.engine.octree;
 using Engine.cgimin.engine.material.simpleblend;
 using Engine.cgimin.engine.terrain;
+using cgimin.engine.skybox;
 
 #endregion --- Using Directives ---
 
@@ -61,6 +62,10 @@ namespace Examples.Tutorial
 
         // Terrain
         private Terrain terrian;
+
+        // Skybox
+        private SkyBox skyBox;
+
 
         // global update counter for animations etc.
         private int updateCounter = 0;
@@ -148,9 +153,13 @@ namespace Examples.Tutorial
             blendMaterialSettings.SrcBlendFactor = BlendingFactor.SrcColor;
             blendMaterialSettings.DestBlendFactor = BlendingFactor.DstColor;
 
+            // Init Skybox
+            skyBox = new SkyBox("data/skybox/lakes_front.png", "data/skybox/lakes_back.png", "data/skybox/lakes_left.png", "data/skybox/lakes_right.png", "data/skybox/lakes_up.png", "data/skybox/lakes_down.png");
+
 
             // Init Octree
             octree = new Octree(new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
+
 
             // generate random positions
             Random random = new Random();
@@ -225,11 +234,10 @@ namespace Examples.Tutorial
             GL.ClearColor(0.3f, 0.3f, 0.3f, 1.0f);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
+            skyBox.Draw();
 
             octree.Draw();
-
-            //terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
-
+            terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
 
             SwapBuffers();
         }

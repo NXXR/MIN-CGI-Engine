@@ -172,3 +172,9 @@ C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\ma
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_back.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_down.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_front.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_left.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_right.png
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\data\skybox\lakes_up.png

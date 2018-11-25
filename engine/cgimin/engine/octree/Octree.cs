@@ -24,6 +24,8 @@ namespace Engine.cgimin.engine.octree
 
         private int iteration;
 
+        private static List<OctreeEntity> transparentList = new List<OctreeEntity>();
+
         public Octree(Vector3 boundsMin, Vector3 boundsMax, int iterationDepth = 1)
         {
             iteration = iterationDepth;
@@ -86,11 +88,15 @@ namespace Engine.cgimin.engine.octree
             }
         }
 
+ 
 
         public void Draw()
         {
+
             if (iteration == 1)
             {
+                transparentList.Clear();
+
                 drawCountStatistic = 0;
                 int len = enteties.Count;
                 for (int i = 0; i < len; i++) enteties[i].drawn = false;
@@ -103,9 +109,18 @@ namespace Engine.cgimin.engine.octree
                 {
                     if (enteties[i].drawn == false)
                     {
-                        enteties[i].Object3d.Transformation = enteties[i].Transform;
-                        enteties[i].Material.DrawWithSettings(enteties[i].Object3d, enteties[i].MaterialSetting);
                         enteties[i].drawn = true;
+
+                        if (!enteties[i].Material.isTransparent)
+                        {
+                            enteties[i].Object3d.Transformation = enteties[i].Transform;
+                            enteties[i].Material.DrawWithSettings(enteties[i].Object3d, enteties[i].MaterialSetting);
+                        }
+                        else
+                        {
+                            transparentList.Add(enteties[i]);
+                        }
+
                         drawCountStatistic++;
                     }
                 }
@@ -121,7 +136,27 @@ namespace Engine.cgimin.engine.octree
                 }
             }
 
-            if (iteration == 1) Console.WriteLine(drawCountStatistic);
+            if (iteration == 1)
+            {
+                Console.WriteLine(transparentList.Count);
+
+                // Alle transparentren Objekte zeichnen
+                foreach (OctreeEntity transEntity in transparentList)
+                {
+                    transEntity.distToCam = (new Vector3(transEntity.Transform.M41, transEntity.Transform.M42, transEntity.Transform.M43) - Camera.Position).Length;
+                }
+
+                // Sortiert die Liste nach 'distToCam'
+                transparentList.Sort((x, y) => y.distToCam.CompareTo(x.distToCam));
+
+                foreach (OctreeEntity transEntity in transparentList)
+                {
+                    transEntity.Object3d.Transformation = transEntity.Transform;
+                    transEntity.Material.DrawWithSettings(transEntity.Object3d, transEntity.MaterialSetting);
+                }
+
+            }
+            // Transformation.M41, Transformation.M42, Transformation.M43
 
         }
 

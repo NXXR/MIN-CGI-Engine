@@ -14,14 +14,14 @@ namespace cgimin.engine.object3d
         public Matrix4 Transformation = Matrix4.Identity;
 
         // lists, filled with the 3d-data
-        public List<Vector3> Positions;
-        public List<Vector3> Normals;
-        public List<Vector2> UVs;
-        public List<Vector3> Tangents;
-        public List<Vector3> BiTangents;
+        public List<Vector3> Positions = new List<Vector3>();
+        public List<Vector3> Normals = new List<Vector3>();
+        public List<Vector2> UVs = new List<Vector2>();
+        public List<Vector3> Tangents = new List<Vector3>();
+        public List<Vector3> BiTangents = new List<Vector3>();
 
         // the index-List
-        public List<int> Indices;
+        public List<int> Indices = new List<int>();
 
         // Vartex-Array-Object "VAO"
         public int Vao;
@@ -205,6 +205,14 @@ namespace cgimin.engine.object3d
             Indices.Add(index);
             Indices.Add(index + 2);
             Indices.Add(index + 1);
+        }
+
+
+        // overloaded method, auto-calculating normal 
+        public void addTriangle(Vector3 v1, Vector3 v2, Vector3 v3, Vector2 uv1, Vector2 uv2, Vector2 uv3)
+        {
+            Vector3 normal = Vector3.Cross(v2 - v1, v3 - v1).Normalized();
+            addTriangle(v1, v2, v3, normal, normal, normal, uv1, uv2, uv3);
         }
 
 

@@ -14,6 +14,7 @@ namespace Engine.cgimin.engine.octree
         public Matrix4 Transform;
 
         public bool drawn;
+        public float distToCam;
 
         public OctreeEntity(BaseObject3D object3d, BaseMaterial material, MaterialSettings materialSetting, Matrix4 transform)
         {

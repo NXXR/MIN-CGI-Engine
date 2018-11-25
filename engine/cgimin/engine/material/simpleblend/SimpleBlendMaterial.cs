@@ -14,6 +14,8 @@ namespace Engine.cgimin.engine.material.simpleblend
 
         public SimpleBlendMaterial()
         {
+            isTransparent = true;
+
             // Shader-Programm loaded from external files
             CreateShaderProgram("cgimin/engine/material/simpleblend/Simple_VS.glsl",
                                 "cgimin/engine/material/simpleblend/Simple_FS.glsl");

@@ -25,6 +25,8 @@ namespace cgimin.engine.material
         private int VertexObject;
         private int FragmentObject;
 
+        public bool isTransparent = false;
+
         public int Program;
 
         public void CreateShaderProgram(string pathVS, string pathFS)

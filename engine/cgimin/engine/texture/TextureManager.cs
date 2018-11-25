@@ -9,7 +9,7 @@ namespace cgimin.engine.texture
     {
 
         // Methode zum laden einer Textur
-        public static int LoadTexture(string fullAssetPath)
+        public static int LoadTexture(string fullAssetPath, bool clampEdges = false)
         {
             // Textur wird generiert
             int returnTextureID = GL.GenTexture();
@@ -27,6 +27,17 @@ namespace cgimin.engine.texture
             GL.TexImage2D(TextureTarget.Texture2D, 0, PixelInternalFormat.Rgba, bmpData.Width, bmpData.Height, 0, OpenTK.Graphics.OpenGL.PixelFormat.Bgra, PixelType.UnsignedByte, bmpData.Scan0);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMinFilter, (int)TextureMinFilter.LinearMipmapLinear);
             GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureMagFilter, (int)TextureMinFilter.LinearMipmapLinear);
+
+            if (clampEdges)
+            {
+                GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.ClampToEdge);
+                GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapT, (int)TextureWrapMode.ClampToEdge);
+            }
+            else
+            {
+                GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapS, (int)TextureWrapMode.Repeat);
+                GL.TexParameter(TextureTarget.Texture2D, TextureParameterName.TextureWrapT, (int)TextureWrapMode.Repeat);
+            }
 
             bmp.UnlockBits(bmpData);
 

@@ -65,6 +65,7 @@
     <Compile Include="cgimin\engine\object3d\ObjLoaderObject3D.cs" />
     <Compile Include="cgimin\engine\octree\Octree.cs" />
     <Compile Include="cgimin\engine\octree\OctreeEntity.cs" />
+    <Compile Include="cgimin\engine\skybox\SkyBox.cs" />
     <Compile Include="cgimin\engine\terrain\Terrain.cs" />
     <Compile Include="cgimin\engine\texture\TextureManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -189,6 +189,13 @@ namespace cgimin.engine.camera
         }
 
 
+        // set transformation Matrix manually from outside
+        public static void SetTransformMatrix(Matrix4 transform)
+        {
+            transformation = transform;
+        }
+
+
         // getter
         public static Vector3 Position
         {
