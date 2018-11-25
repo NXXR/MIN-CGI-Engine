@@ -62,7 +62,7 @@ namespace Examples.Tutorial
         private Octree octree;
 
         // Terrain
-        private Terrain terrian;
+        private Terrain terrain;
 
         // Skybox
         private SkyBox skyBox;
@@ -204,7 +204,7 @@ namespace Examples.Tutorial
             }
 
             // Init terrain
-            terrian = new Terrain();
+            terrain = new Terrain();
 
 
         }
@@ -252,7 +252,7 @@ namespace Examples.Tutorial
             skyBox.Draw();
 
             octree.Draw();
-            terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
+            terrain.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
 
             bitmapGraphics[(updateCounter / 10) % 8].Draw((updateCounter * 2 % 1920) - 1920 * 0.5f, 100, 1);
 

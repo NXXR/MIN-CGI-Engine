@@ -43,6 +43,7 @@ namespace Engine.cgimin.engine.terrain
 
         public Terrain()
         {
+            // Das Tessain setzt sich aus einzelnen Tiles zusammen, diese werden initial erstellt.
             tiles = new List<TerrainTile>();
 
             for (int xTile = -10; xTile < 11; xTile++)
@@ -50,7 +51,7 @@ namespace Engine.cgimin.engine.terrain
                 for (int zTile = -10; zTile < 11; zTile++)
                 {
                     int lod = (int)Math.Sqrt(xTile * xTile + zTile * zTile);
-                    //lod -= 2;
+
                     if (lod < 1) lod = 1;
                     lod = lod * lod;
                     if (lod > 8) lod = 8;
@@ -58,6 +59,7 @@ namespace Engine.cgimin.engine.terrain
                     tiles.Add(generateTerrainTile(xTile * 64, zTile * 64, lod));
                 }
             }
+
             CreateTerrainShaders();
         }
 
@@ -201,14 +203,14 @@ namespace Engine.cgimin.engine.terrain
             // Die ModelView-Matrix wird ebenfalls übergeben
             GL.Uniform3(camSubPositionLocation, new Vector3(((Camera.Position.X) % 8.0f), Camera.Position.Y, ((Camera.Position.Z) % 8.0f)));
 
-            // Die XZ Postition für den Look-Up für die Höhe des Terrains wird berechnet. Jeweils die Kamera-Position - 
+            // Die XZ Postition für den Look-Up für die Höhe des Terrains wird berechnet. Jeweils die Kamera-Position 
             Vector2 texXZPos = new Vector2(Camera.Position.X - ((Camera.Position.X) % 8.0f), Camera.Position.Z - ((Camera.Position.Z) % 8.0f));
             GL.Uniform2(terrainXZPosLocation, ref texXZPos);
 
             // Die Dimension der Height-Map angeben
             GL.Uniform1(terrainSizeLocation, (float)terrainTextureSize);
 
-            // Die Skalierung der Oberflcäehntextur
+            // Die Skalierung der Oberflächentextur
             GL.Uniform1(textureScaleLocation, textureScale);
 
 
