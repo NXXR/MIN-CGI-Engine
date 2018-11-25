@@ -254,7 +254,8 @@ namespace Examples.Tutorial
             octree.Draw();
             terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
 
-            bitmapGraphics[(updateCounter / 10) % 8].Draw(100, 100, 1);
+            bitmapGraphics[(updateCounter / 10) % 8].Draw((updateCounter * 2 % 1920) - 1920 * 0.5f, 100, 1);
+
             abelFont.DrawString("Hallo, dies ist ein Text! Dargestellt mit der BitmapFont Klasse...", -700, -200,   255, 255, 255, 255);
 
             SwapBuffers();
