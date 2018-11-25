@@ -70,6 +70,8 @@ namespace Examples.Tutorial
         // Font
         private BitmapFont abelFont;
 
+        // Bitmap Graphics
+        private List<BitmapGraphic> bitmapGraphics;
 
         // global update counter for animations etc.
         private int updateCounter = 0;
@@ -159,8 +161,16 @@ namespace Examples.Tutorial
             // Init Skybox
             skyBox = new SkyBox("data/skybox/lakes_front.png", "data/skybox/lakes_back.png", "data/skybox/lakes_left.png", "data/skybox/lakes_right.png", "data/skybox/lakes_up.png", "data/skybox/lakes_down.png");
 
-            // Loaf Font
+            // Load Font
             abelFont = new BitmapFont("data/fonts/abel_normal.fnt", "data/fonts/abel_normal.png");
+
+            // Load Sprites
+            bitmapGraphics = new List<BitmapGraphic>();
+            int marioTexture = TextureManager.LoadTexture("data/textures/mario_sprite.png");
+            for (int i = 0; i < 8; i++)
+            {
+                bitmapGraphics.Add(new BitmapGraphic(marioTexture, 512, 128, i * 64, 0, 64, 128));
+            }
 
             // Init Octree
             octree = new Octree(new Vector3(-30, -30, -30), new Vector3(30, 30, 30));
@@ -244,8 +254,8 @@ namespace Examples.Tutorial
             octree.Draw();
             terrian.Draw(blueMarbleColorTexture, 1014, blueMarbleColorTexture, stoneNormalTexture, 0.2f, 60);
 
- 
-            abelFont.DrawString("Hallo, wie geht es und JJJjj y Uu_y", -1920 * 0.5f, -1080.0f * 0.5f,   255, 255, 255, 255);
+            bitmapGraphics[(updateCounter / 10) % 8].Draw(100, 100, 1);
+            abelFont.DrawString("Hallo, dies ist ein Text! Dargestellt mit der BitmapFont Klasse...", -700, -200,   255, 255, 255, 255);
 
             SwapBuffers();
         }

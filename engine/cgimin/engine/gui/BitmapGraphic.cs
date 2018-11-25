@@ -6,7 +6,7 @@ using static cgimin.engine.texture.TextureManager;
 using cgimin.engine.helpers;
 using cgimin.engine.camera;
 
-namespace Engine.cgimin.engine.gui
+namespace cgimin.engine.gui
 {
     public class BitmapGraphic
     {
@@ -42,16 +42,16 @@ namespace Engine.cgimin.engine.gui
             List<int> indices = new List<int>();
 
             vertexData.Add(0); vertexData.Add(0); vertexData.Add(0);
-            vertexData.Add((float)(u1) / texWidth); vertexData.Add((float)(v1) / texHeight);
+            vertexData.Add((float)(u1) / texWidth); vertexData.Add((float)(v2) / texHeight);
 
             vertexData.Add(u2 - u1); vertexData.Add(0); vertexData.Add(0);
-            vertexData.Add((float)(u2) / texWidth); vertexData.Add((float)(v1) / texHeight);
-
-            vertexData.Add(u2 - u1); vertexData.Add(-(v2 - v1)); vertexData.Add(0);
             vertexData.Add((float)(u2) / texWidth); vertexData.Add((float)(v2) / texHeight);
 
-            vertexData.Add(0); vertexData.Add(-(v2 - v1)); vertexData.Add(0);
-            vertexData.Add((float)(u1) / texWidth); vertexData.Add((float)(v2) / texHeight);
+            vertexData.Add(u2 - u1); vertexData.Add((v2 - v1)); vertexData.Add(0);
+            vertexData.Add((float)(u2) / texWidth); vertexData.Add((float)(v1) / texHeight);
+
+            vertexData.Add(0); vertexData.Add((v2 - v1)); vertexData.Add(0);
+            vertexData.Add((float)(u1) / texWidth); vertexData.Add((float)(v1) / texHeight);
 
             indices.Add(0); indices.Add(1); indices.Add(2);
             indices.Add(0); indices.Add(2); indices.Add(3);
