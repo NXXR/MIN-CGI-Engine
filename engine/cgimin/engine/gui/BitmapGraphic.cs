@@ -97,7 +97,7 @@ namespace cgimin.engine.gui
         }
 
 
-      
+
 
         public void Draw(float positionX, float positionY, float alpha = 1.0f)
         {
@@ -129,6 +129,42 @@ namespace cgimin.engine.gui
 
         }
 
+        /// <summary>
+        /// Skaliere das gezeichnete Element in der Breite.
+        /// </summary>
+        /// <param name="positionX"></param>
+        /// <param name="positionY"></param>
+        /// <param name="alpha"></param>
+        /// <param name="xScale"> Zwischen 0 & 1</param>
+        public void DrawXScale(float positionX, float positionY, float alpha = 1.0f, float xScale=1)
+        {
+            GL.BindVertexArray(graphicVOA);
+
+            GL.UseProgram(program);
+            GL.Disable(EnableCap.DepthTest);
+            GL.Disable(EnableCap.CullFace);
+            GL.Enable(EnableCap.Blend);
+            GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
+
+            GL.Uniform1(colorTextureLocation, 0);
+            GL.ActiveTexture(TextureUnit.Texture0);
+            GL.BindTexture(TextureTarget.Texture2D, tID);
+
+            Matrix4 refMatric = Matrix4.CreateScale(xScale, 1, 1) * Matrix4.CreateTranslation(positionX, positionY, 0) * Camera.GuiProjection;
+            GL.UniformMatrix4(modelViewProjectionLocation, false, ref refMatric);
+
+            GL.Uniform1(alphaLocation, alpha);
+
+            GL.DrawElements(PrimitiveType.Triangles, 6, DrawElementsType.UnsignedInt, IntPtr.Zero);
+
+            GL.Enable(EnableCap.DepthTest);
+            GL.Enable(EnableCap.CullFace);
+            GL.Disable(EnableCap.Blend);
+
+            GL.ActiveTexture(TextureUnit.Texture0);
+            GL.BindVertexArray(0);
+
+        }
 
     }
 }
