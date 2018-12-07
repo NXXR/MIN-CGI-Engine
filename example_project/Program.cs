@@ -172,11 +172,12 @@ namespace Examples.Tutorial
 
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
-            // update the fly-cam with keyboard input
-            Camera.UpdateFlyCamera(Keyboard[OpenTK.Input.Key.Left], Keyboard[OpenTK.Input.Key.Right], Keyboard[OpenTK.Input.Key.Up], Keyboard[OpenTK.Input.Key.Down],
-                                   Keyboard[OpenTK.Input.Key.W], Keyboard[OpenTK.Input.Key.S]);
+            KeyboardState keyboardState = Keyboard.GetState();
 
-            // updateCounter simply increaes
+            // update the fly-cam with keyboard input
+            Camera.UpdateFlyCamera(keyboardState[Key.Left], keyboardState[Key.Right], keyboardState[Key.Up], keyboardState[Key.Down],
+                                   keyboardState[Key.W], keyboardState[Key.S]);
+
             updateCounter++;
         }
 
