@@ -7,7 +7,7 @@ in vec3 in_position;
 // die höhen-Textur
 uniform sampler2D height_map; 
 
-// textur-Groeße
+// textur-Größe
 uniform float terrain_size;
 
 // textur-Skalierung
@@ -25,10 +25,10 @@ uniform vec2 xzPos;
 // "texcoord" wird an den Fragment-Shader weitergegeben, daher als "out" deklariert
 out vec2 fragTexcoord;
 
-// die Blickrichtung wird dem Fragment-Shader uebergeben
+// die Blickrichtung wird dem Fragment-Shader übergeben
 out vec4 fragV;
 
-// die TBN-Matrix wird an den Fragment-Shader uebergeben
+// die TBN-Matrix wird an den Fragment-Shader übergeben
 out mat3 fragTBN;
 
 void main()

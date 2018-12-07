@@ -1,6 +1,11 @@
 ﻿using cgimin.engine.material;
 using cgimin.engine.object3d;
 using OpenTK;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using static cgimin.engine.material.BaseMaterial;
 
 namespace Engine.cgimin.engine.octree
@@ -13,8 +18,9 @@ namespace Engine.cgimin.engine.octree
         public MaterialSettings MaterialSetting;
         public Matrix4 Transform;
 
+        public float SquaredCamDistance;
+
         public bool drawn;
-        public float distToCam;
 
         public OctreeEntity(BaseObject3D object3d, BaseMaterial material, MaterialSettings materialSetting, Matrix4 transform)
         {

@@ -15,7 +15,6 @@ namespace cgimin.engine.object3d
 
         public ObjLoaderObject3D(String filePath, float scale = 1.0f, bool doAverageTangets = false)
         {
-
             Positions = new List<Vector3>();
             Normals = new List<Vector3>();
             UVs = new List<Vector2>();
@@ -45,7 +44,7 @@ namespace cgimin.engine.object3d
                         string[] triIndicesV2 = parts[2].Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                         string[] triIndicesV3 = parts[3].Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 
-                        addTriangle(v[Convert.ToInt32(triIndicesV1[0]) - 1], v[Convert.ToInt32(triIndicesV2[0]) - 1], v[Convert.ToInt32(triIndicesV3[0]) - 1],
+                        addTriangle( v[Convert.ToInt32(triIndicesV1[0]) - 1],  v[Convert.ToInt32(triIndicesV2[0]) - 1],  v[Convert.ToInt32(triIndicesV3[0]) - 1],
                                     vn[Convert.ToInt32(triIndicesV1[2]) - 1], vn[Convert.ToInt32(triIndicesV2[2]) - 1], vn[Convert.ToInt32(triIndicesV3[2]) - 1],
                                     vt[Convert.ToInt32(triIndicesV1[1]) - 1], vt[Convert.ToInt32(triIndicesV2[1]) - 1], vt[Convert.ToInt32(triIndicesV3[1]) - 1]);
 

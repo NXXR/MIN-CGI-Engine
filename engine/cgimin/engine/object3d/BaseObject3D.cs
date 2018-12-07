@@ -27,7 +27,7 @@ namespace cgimin.engine.object3d
         public int Vao;
 
         // object radius
-        public float radius;
+        public float radius { get; private set; }
 
         // generates the Vartex-Array-Objekt
         public void CreateVAO()
@@ -74,7 +74,7 @@ namespace cgimin.engine.object3d
             GL.BindBuffer(BufferTarget.ArrayBuffer, allBufferVBO);
 
             // Data is uploaded to graphics memory
-            GL.BufferData(BufferTarget.ArrayBuffer, (IntPtr)(allData.Count * sizeof(float)), allData.ToArray(), BufferUsageHint.StaticDraw);
+            GL.BufferData(BufferTarget.ArrayBuffer, (IntPtr)(allData.Count  * sizeof(float)), allData.ToArray(), BufferUsageHint.StaticDraw);
 
             // BindBuffer to 0, so the following commands do not overwrite the current vbo (state machine)
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
@@ -92,7 +92,7 @@ namespace cgimin.engine.object3d
 
             // BindBuffer to 0, so the following commands do not overwrite the current element buffer (state machine)
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
-
+            
 
             // generating the Vertex-Array-Objects
             GL.GenVertexArrays(1, out Vao);
@@ -260,6 +260,8 @@ namespace cgimin.engine.object3d
 
 
 
+
+
+
     }
 }
-

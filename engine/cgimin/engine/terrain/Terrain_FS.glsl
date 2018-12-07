@@ -5,13 +5,13 @@ precision highp float;
 uniform sampler2D color_texture;
 uniform sampler2D normalmap_texture;
 
-// Parameter fuer direktionales Licht
+// Parameter für direktionales Licht
 uniform vec3 light_direction;
 uniform vec4 light_ambient_color;
 uniform vec4 light_diffuse_color;
 uniform vec4 light_specular_color;
 
-// Parameter fuer die Specalar-Intensitaet "Shininess"
+// Parameter für die Specalar-Intensität "Shininess"
 uniform float specular_shininess;
 
 // input vom Vertex-Shader

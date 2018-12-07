@@ -3,6 +3,7 @@ using cgimin.engine.helpers;
 using OpenTK;
 using System;
 using System.Collections.Generic;
+using cgimin.engine.material;
 
 namespace Engine.cgimin.engine.octree
 {
@@ -10,9 +11,9 @@ namespace Engine.cgimin.engine.octree
     {
         private static int drawCountStatistic;
 
-        private static int maxIterationDepth = 5;
+        private const int MaxIterationDepth = 5;
 
-        internal List<Octree> children;
+        private readonly List<Octree> children;
 
         internal Vector3 bMin;
         internal Vector3 bMax;
@@ -20,11 +21,9 @@ namespace Engine.cgimin.engine.octree
         internal Vector3 mid;
         internal float midRadius;
 
-        internal List<OctreeEntity> enteties;
+        internal List<OctreeEntity> entities;
 
         private int iteration;
-
-        private static List<OctreeEntity> transparentList = new List<OctreeEntity>();
 
         public Octree(Vector3 boundsMin, Vector3 boundsMax, int iterationDepth = 1)
         {
@@ -46,22 +45,22 @@ namespace Engine.cgimin.engine.octree
 
             if (iteration == 1)
             {
-                if (enteties == null) enteties = new List<OctreeEntity>();
-                enteties.Add(entity);
+                if (entities == null) entities = new List<OctreeEntity>();
+                entities.Add(entity);
             }
 
             // extracting position from object transform matrix
-            Vector3 pos = new Vector3(entity.Transform.M41, entity.Transform.M42, entity.Transform.M43);
+            var pos = entity.Transform.ExtractTranslation();
             float radius = entity.Object3d.radius;
 
             if (Helpers.SphereAARectangleIntersect(pos, radius, bMin, bMax))
             {
 
-                if (iteration == maxIterationDepth)
+                if (iteration == MaxIterationDepth && iteration != 1)
                 {
                     // only add entity when at max iteration depth
-                    if (enteties == null) enteties = new List<OctreeEntity>();
-                    enteties.Add(entity);
+                    if (entities == null) entities = new List<OctreeEntity>();
+                    entities.Add(entity);
                 }
                 else
                 {
@@ -88,39 +87,34 @@ namespace Engine.cgimin.engine.octree
             }
         }
 
- 
-
+        /// <summary>
+        /// Should only be called on the root of the Octree.
+        /// </summary>
         public void Draw()
         {
+            drawCountStatistic = 0;
+            int len = entities.Count;
+            for (int i = 0; i < len; i++) entities[i].drawn = false;
+            
+            CheckForDraw();
+            
+            MaterialManager.DrawAll();
+            
+            //Console.WriteLine(drawCountStatistic);
+        }
 
-            if (iteration == 1)
+        private void CheckForDraw()
+        {
+            if (iteration == MaxIterationDepth)
             {
-                transparentList.Clear();
-
-                drawCountStatistic = 0;
-                int len = enteties.Count;
-                for (int i = 0; i < len; i++) enteties[i].drawn = false;
-            }
-
-            if (iteration == maxIterationDepth)
-            {
-                int len = enteties.Count;
+                int len = entities.Count;
                 for (int i = 0; i < len; i++)
                 {
-                    if (enteties[i].drawn == false)
+                    var entity = entities[i];
+                    if (!entity.drawn)
                     {
-                        enteties[i].drawn = true;
-
-                        if (!enteties[i].Material.isTransparent)
-                        {
-                            enteties[i].Object3d.Transformation = enteties[i].Transform;
-                            enteties[i].Material.DrawWithSettings(enteties[i].Object3d, enteties[i].MaterialSetting);
-                        }
-                        else
-                        {
-                            transparentList.Add(enteties[i]);
-                        }
-
+                        entity.Material.RegisterForDraw(entity);
+                        entity.drawn = true;
                         drawCountStatistic++;
                     }
                 }
@@ -131,35 +125,10 @@ namespace Engine.cgimin.engine.octree
                 {
                     if (children[i] != null && Camera.SphereIsInFrustum(children[i].mid, children[i].midRadius))
                     {
-                        children[i].Draw();
+                        children[i].CheckForDraw();
                     }
                 }
             }
-
-            if (iteration == 1)
-            {
-                Console.WriteLine(transparentList.Count);
-
-                // Alle transparentren Objekte zeichnen
-                foreach (OctreeEntity transEntity in transparentList)
-                {
-                    transEntity.distToCam = (new Vector3(transEntity.Transform.M41, transEntity.Transform.M42, transEntity.Transform.M43) - Camera.Position).Length;
-                }
-
-                // Sortiert die Liste nach 'distToCam'
-                transparentList.Sort((x, y) => y.distToCam.CompareTo(x.distToCam));
-
-                foreach (OctreeEntity transEntity in transparentList)
-                {
-                    transEntity.Object3d.Transformation = transEntity.Transform;
-                    transEntity.Material.DrawWithSettings(transEntity.Object3d, transEntity.MaterialSetting);
-                }
-
-            }
-            // Transformation.M41, Transformation.M42, Transformation.M43
-
         }
-
-
     }
 }
