@@ -18,9 +18,9 @@ namespace cgimin.engine.material
 			public float shininess;
 
 			// values for blending
-			public BlendingFactorSrc SrcBlendFactor;
+			public BlendingFactor SrcBlendFactor;
 
-			public BlendingFactorDest DestBlendFactor;
+			public BlendingFactor DestBlendFactor;
 		}
 
 		private readonly List<OctreeEntity> objectsToDraw;
