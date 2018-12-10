@@ -1,136 +1,154 @@
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\OpenTK.dll
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\OpenTK.xml
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\obj\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\obj\Debug\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
-C:\Users\Lars Mohrmann\Documents\Visual Studio 2015\Projects\lv2\Engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\Engine.pdb
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\bin\Debug\OpenTK.xml
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\engine.csprojResolveAssemblyReference.cache
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Desktop\lv3\engine\obj\Debug\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\OpenTK.xml
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Debug\engine.csprojResolveAssemblyReference.cache
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Debug\Engine.dll
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Debug\Engine.pdb
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\Engine.dll
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\Engine.pdb
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\OpenTK.xml
-D:\C#Projects\cgi_17_18_engine\engine\obj\Debug\engine.csprojResolveAssemblyReference.cache
-D:\C#Projects\cgi_17_18_engine\engine\obj\Debug\Engine.dll
-D:\C#Projects\cgi_17_18_engine\engine\obj\Debug\Engine.pdb
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\ambientdiffusespecular\AmbientDiffuseSpecular_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\ambientdiffuse\AmbientDiffuse_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\cubereflectionnormal\CubeReflectionNormal_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\normalmappingcubespecular\NormalMappingCubeSpecular_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\normalmapping\NormalMapping_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simplereflection\SimpleReflection_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpletexture\Simple_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\wobble1\Wobble1_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\material\wobble2\Wobble2_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\Engine.dll
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\Engine.pdb
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\bin\Debug\OpenTK.xml
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\obj\Debug\engine.csprojResolveAssemblyReference.cache
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\obj\Debug\Engine.dll
-C:\Users\jonas\RiderProjects\cgi_17_18\engine\obj\Debug\Engine.pdb
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
-D:\C#Projects\cgi_17_18_engine\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\Engine.dll
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\Engine.pdb
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Debug\OpenTK.xml
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Debug\engine.csprojAssemblyReference.cache
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Debug\engine.csproj.CopyComplete
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Debug\Engine.dll
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Debug\Engine.pdb
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_FS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\material\fullscreensimple\FullscreenSimple_VS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_VS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\cgimin\engine\terrain\Terrain_FS.glsl
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\Engine.dll
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\Engine.pdb
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.xml
-C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csprojAssemblyReference.cache
-C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CoreCompileInputs.cache
-C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CopyComplete
-C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.dll
-C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.pdb
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.pdb
-C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.dll
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/obj/Debug/Engine.csprojResolveAssemblyReference.cache
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_FS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_VS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_FS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_VS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_FS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_VS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/Engine.pdb
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/OpenTK.dll
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/OpenTK.xml
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/obj/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/obj/Debug/Engine.pdb
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_FS.glsl
+C:/Users/Lars Mohrmann/Documents/Visual Studio 2015/Projects/lv2/Engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_VS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_FS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_VS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_FS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_VS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_FS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_VS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_FS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_VS.glsl
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/Engine.pdb
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/bin/Debug/OpenTK.xml
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/obj/Debug/engine.csprojResolveAssemblyReference.cache
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/obj/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Desktop/lv3/engine/obj/Debug/Engine.pdb
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/Engine.pdb
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/OpenTK.xml
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/obj/Debug/engine.csprojResolveAssemblyReference.cache
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/obj/Debug/Engine.dll
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/obj/Debug/Engine.pdb
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/ambientdiffusespecular/AmbientDiffuseSpecular_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/ambientdiffusespecular/AmbientDiffuseSpecular_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/ambientdiffuse/AmbientDiffuse_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/ambientdiffuse/AmbientDiffuse_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/normalmapping/NormalMapping_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/normalmapping/NormalMapping_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/Engine.dll
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/Engine.pdb
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/OpenTK.xml
+D:/C#Projects/cgi_17_18_engine/engine/obj/Debug/engine.csprojResolveAssemblyReference.cache
+D:/C#Projects/cgi_17_18_engine/engine/obj/Debug/Engine.dll
+D:/C#Projects/cgi_17_18_engine/engine/obj/Debug/Engine.pdb
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/cubereflectionnormal/CubeReflectionNormal_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/cubereflectionnormal/CubeReflectionNormal_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/normalmappingcubespecular/NormalMappingCubeSpecular_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/normalmappingcubespecular/NormalMappingCubeSpecular_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/ambientdiffusespecular/AmbientDiffuseSpecular_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/ambientdiffusespecular/AmbientDiffuseSpecular_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/ambientdiffuse/AmbientDiffuse_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/ambientdiffuse/AmbientDiffuse_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/cubereflectionnormal/CubeReflectionNormal_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/cubereflectionnormal/CubeReflectionNormal_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/normalmappingcubespecular/NormalMappingCubeSpecular_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/normalmappingcubespecular/NormalMappingCubeSpecular_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/normalmapping/NormalMapping_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/normalmapping/NormalMapping_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simplereflection/SimpleReflection_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpletexture/Simple_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/wobble1/Wobble1_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/material/wobble2/Wobble2_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/Engine.dll
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/Engine.pdb
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/bin/Debug/OpenTK.xml
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/obj/Debug/engine.csprojResolveAssemblyReference.cache
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/obj/Debug/Engine.dll
+C:/Users/jonas/RiderProjects/cgi_17_18/engine/obj/Debug/Engine.pdb
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+D:/C#Projects/cgi_17_18_engine/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_FS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_VS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_FS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_VS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+C:/Users/Lars Mohrmann/Documents/cgi_17_18/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_FS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_VS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_FS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_VS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/Engine.dll
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/Engine.pdb
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/bin/Debug/OpenTK.xml
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/obj/Debug/engine.csprojAssemblyReference.cache
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/obj/Debug/engine.csproj.CopyComplete
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/obj/Debug/Engine.dll
+C:/Users/mohrm/Documents/cgi_17_18.git/engine/obj/Debug/Engine.pdb
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_FS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_VS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_FS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_VS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/Engine.dll
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/Engine.pdb
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/OpenTK.xml
+C:/Users/mohrm/Documents/cgimin-18-19/engine/obj/Debug/engine.csprojAssemblyReference.cache
+C:/Users/mohrm/Documents/cgimin-18-19/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+C:/Users/mohrm/Documents/cgimin-18-19/engine/obj/Debug/engine.csproj.CopyComplete
+C:/Users/mohrm/Documents/cgimin-18-19/engine/obj/Debug/Engine.dll
+C:/Users/mohrm/Documents/cgimin-18-19/engine/obj/Debug/Engine.pdb
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/OpenTK.pdb
+C:/Users/mohrm/Documents/cgimin-18-19/engine/bin/Debug/OpenTK.dll
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_FS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/gbufferlayout/GBufferLayout_VS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_FS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/simpleblend/Simple_VS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_FS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/material/fullscreensimple/FullscreenSimple_VS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/terrain/Terrain_VS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/cgimin/engine/terrain/Terrain_FS.glsl
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/Engine.dll
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/Engine.pdb
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/OpenTK.dll
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/OpenTK.pdb
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/bin/Debug/OpenTK.xml
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/obj/Debug/engine.csprojAssemblyReference.cache
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/obj/Debug/engine.csproj.CoreCompileInputs.cache
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/obj/Debug/engine.csproj.CopyComplete
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/obj/Debug/Engine.dll
+/Users/richardbischof/Documents/Studium/MIN-CGI/cgimin-18-19/engine/obj/Debug/Engine.pdb

@@ -98,9 +98,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Engine\Engine.csproj">
-      <Project>{957d9c3c-f774-49c7-bfc0-725e52cd20c3}</Project>
-      <Name>Engine</Name>
+    <ProjectReference Include="..\engine\engine.csproj">
+      <Project>{957D9C3C-F774-49C7-BFC0-725E52CD20C3}</Project>
+      <Name>engine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
