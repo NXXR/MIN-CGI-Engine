@@ -126,8 +126,8 @@ namespace Examples.Tutorial
             // transparent blended material
             MaterialSettings blendMaterialSettings = new MaterialSettings();
             blendMaterialSettings.colorTexture = orangeColorTexture;
-            blendMaterialSettings.SrcBlendFactor = BlendingFactorSrc.SrcColor;
-            blendMaterialSettings.DestBlendFactor = BlendingFactorDest.DstColor;
+            blendMaterialSettings.SrcBlendFactor = BlendingFactor.SrcColor;
+            blendMaterialSettings.DestBlendFactor = BlendingFactor.DstColor;
 
 
             // Init Octree
@@ -207,25 +207,27 @@ namespace Examples.Tutorial
         }
 
 
+
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
             // update the fly-cam with keyboard input
             //Camera.UpdateFlyCamera(Keyboard[OpenTK.Input.Key.Left], Keyboard[OpenTK.Input.Key.Right], Keyboard[OpenTK.Input.Key.Up], Keyboard[OpenTK.Input.Key.Down],
             //                       Keyboard[OpenTK.Input.Key.W], Keyboard[OpenTK.Input.Key.S]);
 
+            KeyboardState keyboardState = Keyboard.GetState();
 
-            if (Keyboard[OpenTK.Input.Key.Number1]) displaySwitch = 0;
-            if (Keyboard[OpenTK.Input.Key.Number2]) displaySwitch = 1;
-            if (Keyboard[OpenTK.Input.Key.Number3]) displaySwitch = 2;
-            if (Keyboard[OpenTK.Input.Key.Number4]) displaySwitch = 3;
+            if (keyboardState[OpenTK.Input.Key.Number1]) displaySwitch = 0;
+            if (keyboardState[OpenTK.Input.Key.Number2]) displaySwitch = 1;
+            if (keyboardState[OpenTK.Input.Key.Number3]) displaySwitch = 2;
+            if (keyboardState[OpenTK.Input.Key.Number4]) displaySwitch = 3;
 
 
-            if (oldMouseX > 0) Camera.UpdateMouseCamera(0.3f, Keyboard[OpenTK.Input.Key.A], Keyboard[OpenTK.Input.Key.D], 
-                                                              Keyboard[OpenTK.Input.Key.W],Keyboard[OpenTK.Input.Key.S], 
-                                                              (oldMouseY - this.Mouse.Y) / 200.0f, (oldMouseX - this.Mouse.X) / 200.0f);
+            if (oldMouseX > 0) Camera.UpdateMouseCamera(0.3f, keyboardState[OpenTK.Input.Key.A], keyboardState[OpenTK.Input.Key.D],
+                                                              keyboardState[OpenTK.Input.Key.W], keyboardState[OpenTK.Input.Key.S], 
+                                                              (oldMouseY - this.oldMouseY) / 200.0f, (oldMouseX - this.oldMouseX) / 200.0f);
 
-            oldMouseX = this.Mouse.X;
-            oldMouseY = this.Mouse.Y;
+            oldMouseX = this.oldMouseX;
+            oldMouseY = this.oldMouseY;
 
 
             // updateCounter simply increaes
@@ -250,7 +252,7 @@ namespace Examples.Tutorial
 
                 // set to additive blending
                 GL.Enable(EnableCap.Blend);
-                GL.BlendFunc(BlendingFactorSrc.One, BlendingFactorDest.One);
+                GL.BlendFunc(BlendingFactor.One, BlendingFactor.One);
 
                 // draw all point light with the now enebaled additive blending
                 Vector3 addPos = new Vector3();

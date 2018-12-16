@@ -35,7 +35,7 @@ namespace Engine.cgimin.engine.material.simpleblend
 
         }
 
-        public void Draw(BaseObject3D object3d, int textureID, BlendingFactorSrc srcBlendFactor, BlendingFactorDest destBlendFactor)
+        public void Draw(BaseObject3D object3d, int textureID, BlendingFactor srcBlendFactor, BlendingFactor destBlendFactor)
         {
             GL.BlendFunc(srcBlendFactor, destBlendFactor);
 
