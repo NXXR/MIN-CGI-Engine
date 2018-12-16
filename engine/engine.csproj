@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OpenTK, Version=3.0.1.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenTK.3.0.1\lib\net20\OpenTK.dll</HintPath>
+    <Reference Include="OpenTK, Version=2.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.2.0.0\lib\net20\OpenTK.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,26 +49,39 @@
     <Compile Include="cgimin\engine\deferred\DeferredRendering.cs" />
     <Compile Include="cgimin\engine\helpers\Helpers.cs" />
     <Compile Include="cgimin\engine\helpers\ShaderCompiler.cs" />
-    <Compile Include="cgimin\engine\light\Light.cs" />
+    <Compile Include="cgimin\engine\lighting\BaseLighting.cs" />
     <Compile Include="cgimin\engine\material\BaseMaterial.cs" />
+    <Compile Include="cgimin\engine\lighting\fullscreen\directional\DirectionalLight.cs" />
     <Compile Include="cgimin\engine\material\gbufferlayout\GBufferLayoutMaterial.cs" />
+    <Compile Include="cgimin\engine\lighting\local\pointlight\PointLight.cs" />
     <Compile Include="cgimin\engine\material\MaterialManager.cs" />
     <Compile Include="cgimin\engine\material\simpleblend\SimpleBlendMaterial.cs" />
-    <Compile Include="cgimin\engine\material\fullscreensimple\FullscreenSimple.cs" />
+    <Compile Include="cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple.cs" />
     <Compile Include="cgimin\engine\object3d\BaseObject3D.cs" />
     <Compile Include="cgimin\engine\object3d\CubeObject3D.cs" />
     <Compile Include="cgimin\engine\object3d\ObjLoaderObject3D.cs" />
     <Compile Include="cgimin\engine\octree\Octree.cs" />
     <Compile Include="cgimin\engine\octree\OctreeEntity.cs" />
-    <Compile Include="cgimin\engine\terrain\Terrain.cs" />
     <Compile Include="cgimin\engine\texture\TextureManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="cgimin\engine\material\simpleblend\Simple_FS.glsl">
@@ -76,16 +90,10 @@
     <None Include="cgimin\engine\material\simpleblend\Simple_VS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="cgimin\engine\material\fullscreensimple\FullscreenSimple_FS.glsl">
+    <None Include="cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="cgimin\engine\material\fullscreensimple\FullscreenSimple_VS.glsl">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="cgimin\engine\terrain\Terrain_VS.glsl">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="cgimin\engine\terrain\Terrain_FS.glsl">
+    <None Include="cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="OpenTK.dll.config" />

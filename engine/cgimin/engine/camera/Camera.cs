@@ -30,13 +30,13 @@ namespace cgimin.engine.camera
 
         // frustum clipping-planes
         private static List<Plane> planes;
-
+        
         // Matrix for the transformation
         private static Matrix4 transformation;
 
         // ... and the petrspective projection
         private static Matrix4 perspectiveProjection;
-
+        
         // position for the camera is saved
         private static Vector3 position;
 
@@ -44,8 +44,6 @@ namespace cgimin.engine.camera
         private static float xRotation;
         private static float yRotation;
 
-        // gui projection matrix
-        public static Matrix4 GuiProjection { get; private set; }
 
         public static void Init()
         {
@@ -57,12 +55,6 @@ namespace cgimin.engine.camera
             xRotation = 0;
             yRotation = 0;
             position = Vector3.Zero;
-
-            // create default orthographic
-            Matrix4 ddProjection = new Matrix4();
-            Matrix4.CreateOrthographic(1920, 1080, -1, 1, out ddProjection);
-            GuiProjection = ddProjection;
-
         }
 
 
@@ -71,11 +63,6 @@ namespace cgimin.engine.camera
         {
             float aspectRatio = width / (float)height;
             Matrix4.CreatePerspectiveFieldOfView((float)(fov * Math.PI / 180.0f), aspectRatio, 0.01f, 500, out perspectiveProjection);
-
-            // Set orthographic projection that width of screen stays 1920, but height depends on aspect-ratio
-            Matrix4 ddProjection = new Matrix4();
-            Matrix4.CreateOrthographic(1920, 1920.0f * height / width, -1, 1, out ddProjection);
-            GuiProjection = ddProjection;
         }
 
 
@@ -85,6 +72,7 @@ namespace cgimin.engine.camera
         {
             position = eye;
             transformation = Matrix4.LookAt(eye, target, up);
+
             CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
@@ -112,9 +100,28 @@ namespace cgimin.engine.camera
             CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
+        // Steering update mouse camera
+        public static void UpdateMouseCamera(float strafeSpeed, bool strafeLeft, bool strafeRight, bool moveForward, bool moveBack, float mouseDeltaUp, float mouseDeltaLeft)
+        {
+            yRotation -= mouseDeltaLeft;
+            xRotation -= mouseDeltaUp;
+
+            if (moveForward) position -= new Vector3(transformation.Column2.X, transformation.Column2.Y, transformation.Column2.Z) * strafeSpeed;
+            if (moveBack) position += new Vector3(transformation.Column2.X, transformation.Column2.Y, transformation.Column2.Z) * strafeSpeed;
+
+            if (strafeLeft) position -= new Vector3(transformation.Column0.X, transformation.Column0.Y, transformation.Column0.Z) * strafeSpeed;
+            if (strafeRight) position += new Vector3(transformation.Column0.X, transformation.Column0.Y, transformation.Column0.Z) * strafeSpeed;
+
+            transformation = Matrix4.Identity;
+            transformation *= Matrix4.CreateTranslation(-position.X, -position.Y, -position.Z);
+            transformation *= Matrix4.CreateRotationZ(yRotation);
+            transformation *= Matrix4.CreateRotationX(xRotation);
+
+            CreateViewFrustumPlanes(transformation * perspectiveProjection);
+        }
 
         // calculate 6 clipping planes of the view frustum
-        private static void CreateViewFrustumPlanes(Matrix4 mat)
+         private static void CreateViewFrustumPlanes(Matrix4 mat)
         {
             // left
             Plane plane = new Plane();
@@ -198,13 +205,6 @@ namespace cgimin.engine.camera
                 }
             }
             return true;
-        }
-
-
-        // set transformation Matrix manually from outside
-        public static void SetTransformMatrix(Matrix4 transform)
-        {
-            transformation = transform;
         }
 
 

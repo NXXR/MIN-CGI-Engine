@@ -18,9 +18,9 @@ namespace cgimin.engine.material
 			public float shininess;
 
 			// values for blending
-			public BlendingFactor SrcBlendFactor;
+			public BlendingFactorSrc SrcBlendFactor;
 
-			public BlendingFactor DestBlendFactor;
+			public BlendingFactorDest DestBlendFactor;
 		}
 
 		private readonly List<OctreeEntity> objectsToDraw;
@@ -31,7 +31,7 @@ namespace cgimin.engine.material
 		protected int Program;
 
         // flag, if this material needs tp be sorted
-        protected bool SortFarToNear = false;
+        public bool SortFarToNear { get; protected set; } = false;
 
 		protected BaseMaterial()
 		{

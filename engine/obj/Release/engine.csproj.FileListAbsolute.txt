@@ -44,12 +44,31 @@ C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\Engine.pdb
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\engine.csprojResolveAssemblyReference.cache
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\Engine.dll
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\engine.csproj.CoreCompileInputs.cache
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\terrain\Terrain_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\terrain\Terrain_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\fullscreensimple\FullscreenSimple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\fullscreensimple\FullscreenSimple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\engine.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\Engine.dll
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\Engine.pdb
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\engine.csprojAssemblyReference.cache
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\engine.csproj.CoreCompileInputs.cache
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\engine.csproj.CopyComplete
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\Engine.dll
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\Engine.pdb

@@ -1,7 +1,6 @@
 ﻿using System;
 using cgimin.engine.camera;
 using cgimin.engine.object3d;
-using cgimin.engine.light;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
 using System.Collections.Generic;

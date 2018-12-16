@@ -4,6 +4,8 @@ using OpenTK.Graphics.OpenGL;
 using OpenTK.Graphics;
 using cgimin.engine.object3d;
 using cgimin.engine.texture;
+using Engine.cgimin.engine.material.fullscreen.directional;
+using Engine.cgimin.engine.material.local.pointlight;
 using Engine.cgimin.engine.material.fullscreensimple;
 
 namespace cgimin.engine.deferred
@@ -18,25 +20,36 @@ namespace cgimin.engine.deferred
         public static int GNormalBuffer;
 
         private static BaseObject3D fullscreenQuad;
+        private static ObjLoaderObject3D pointLightObject;
 
         private static int GFramebufferName;
         private static int width;
         private static int height;
 
+        // Debug Fullscreen Material
+        private static FullscreenSimple fullscreenSimple;
+
         // Fullscreen Materials
-        private static FullscreenSimple fullscreenSimpleMaterial; 
+        private static DirectionalLight directionalLight;
+        private static PointLight pointLight;
 
         public static void Init(int screenWidth, int screenHeight)
         {
             width = screenWidth;
             height = screenHeight;
 
-            fullscreenSimpleMaterial = new FullscreenSimple();
+            directionalLight = new DirectionalLight();
+            pointLight = new PointLight();
+            fullscreenSimple = new FullscreenSimple();
 
+            // the fullscreen quad object
             fullscreenQuad = new BaseObject3D();
             fullscreenQuad.addTriangle(new Vector3(1, -1, 0), new Vector3(-1, -1, 0), new Vector3(1, 1, 0), new Vector2(1, 0), new Vector2(0, 0), new Vector2(1, 1));
             fullscreenQuad.addTriangle(new Vector3(-1, -1, 0), new Vector3(1, 1, 0), new Vector3(-1, 1, 0), new Vector2(0, 0), new Vector2(1, 1), new Vector2(0, 1));
             fullscreenQuad.CreateVAO();
+
+            //point light object
+            pointLightObject = new ObjLoaderObject3D("data/objects/sphere.obj", 1.0f, true);
 
             // G Buffers
             GFramebufferName = 0;
@@ -102,23 +115,75 @@ namespace cgimin.engine.deferred
 
 
 
-        public static void DebugFullscreen()
+        public static void DrawDirectionalLight()
         {
+
             GL.BindFramebuffer(FramebufferTarget.Framebuffer, 0);
  
             GL.ClearColor(new Color4(1, 0, 0, 0));
             GL.Disable(EnableCap.DepthTest);
+            
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.Disable(EnableCap.CullFace);
 
             GL.Viewport(0, 0, width, height);
 
+            directionalLight.Draw(fullscreenQuad, GColorBuffer, GNormalBuffer, GPositionBuffer);
 
-            fullscreenSimpleMaterial.DrawDirect(fullscreenQuad, GNormalBuffer);
+            GL.Enable(EnableCap.CullFace);
+
+        }
+
+        public static void CopyDepthToMainScreen()
+        {   
+            // copy depth to main screen
+            GL.BindFramebuffer(FramebufferTarget.ReadFramebuffer, GFramebufferName);
+            GL.BindFramebuffer(FramebufferTarget.DrawFramebuffer, 0);
+            GL.BlitFramebuffer(0, 0, width, height, 0, 0, width, height, ClearBufferMask.DepthBufferBit, BlitFramebufferFilter.Nearest);
+            
+            // reeset render target to main screen
+            GL.BindFramebuffer(FramebufferTarget.Framebuffer, 0);
+
+            // enable z-buffer again
+            GL.Enable(EnableCap.DepthTest);
+        }
+
+
+
+        public static void DrawDebugFullscreen(int mode)
+        {
+
+            GL.BindFramebuffer(FramebufferTarget.Framebuffer, 0);
+
+            GL.ClearColor(new Color4(1, 0, 0, 0));
+            GL.Disable(EnableCap.DepthTest);
+
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+            GL.Disable(EnableCap.CullFace);
+
+            GL.Viewport(0, 0, width, height);
+
+            if (mode == 0) fullscreenSimple.Draw(fullscreenQuad, GColorBuffer);
+            if (mode == 1) fullscreenSimple.Draw(fullscreenQuad, GNormalBuffer);
+            if (mode == 2) fullscreenSimple.Draw(fullscreenQuad, GPositionBuffer);
 
 
             GL.Enable(EnableCap.CullFace);
 
+        }
+
+
+        public static void DrawPointLight(Vector3 pos, Vector3 ambientColor, Vector3 diffuseColor, Vector3 specularColor, float radius, float shininess)
+        {
+            GL.Enable(EnableCap.CullFace);
+            GL.CullFace(CullFaceMode.Back);
+            pointLight.Draw(pointLightObject, pos, shininess, ambientColor, diffuseColor, specularColor,  radius, GNormalBuffer, GPositionBuffer, width, height);
+
+        }
+
+        public static void SetDirectionalLight(Vector3 direction, Vector4 ambient, Vector4 diffuse, Vector4 specular, float shininess)
+        {
+            directionalLight.SetProperties(direction, ambient, diffuse, specular, shininess);
         }
 
 

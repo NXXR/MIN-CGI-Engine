@@ -9,10 +9,8 @@ namespace cgimin.engine.material
 	/// </summary>
 	public enum Material
 	{
-		//ORDER MATTERS!
 		GBUFFERLAYOUT = 0,
 		SIMPLE_BLEND = 1
-		//ORDER MATTERS!
 	}
 
 	public static class MaterialManager
@@ -30,14 +28,25 @@ namespace cgimin.engine.material
 		public static BaseMaterial GetMaterial(Material material) => Materials[(int) material];
 
 		/// <summary>
-		/// Draws all Materials in succession.
+		/// Draws all solid Materials in succession.
 		/// </summary>
-		public static void DrawAll()
+		public static void DrawAllSolidMaterials()
 		{
 			foreach (var material in Materials)
 			{
-				material.DrawAll();
+				if (!material.SortFarToNear) material.DrawAll();
 			}
 		}
-	}
+
+        /// <summary>
+        /// Draws all transparent Materials in succession.
+        /// </summary>
+        public static void DrawAllTransparentMaterials()
+        {
+            foreach (var material in Materials)
+            {
+                if (material.SortFarToNear) material.DrawAll();
+            }
+        }
+    }
 }

@@ -17,8 +17,7 @@ void main()
 	// "in_uv" (Texturkoordinate) wird direkt an den Fragment-Shader weitergereicht
 	texcoord = in_uv;
 
-	// in gl_Position die finalan Vertex-Position geschrieben ("modelview_projection_matrix" * "in_position")
-	gl_Position = modelview_projection_matrix * vec4(in_position, 1);
+	gl_Position = vec4(in_position, 1);
 }
 
 

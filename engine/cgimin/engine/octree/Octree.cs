@@ -90,7 +90,7 @@ namespace Engine.cgimin.engine.octree
         /// <summary>
         /// Should only be called on the root of the Octree.
         /// </summary>
-        public void Draw()
+        public void DrawSolidMaterials()
         {
             drawCountStatistic = 0;
             int len = entities.Count;
@@ -98,9 +98,15 @@ namespace Engine.cgimin.engine.octree
             
             CheckForDraw();
             
-            MaterialManager.DrawAll();
-            
-            //Console.WriteLine(drawCountStatistic);
+            MaterialManager.DrawAllSolidMaterials();
+        }
+
+        /// <summary>
+        /// Should only be called on the root of the Octree.
+        /// </summary>
+        public void DrawTransparentMaterials()
+        {
+            MaterialManager.DrawAllTransparentMaterials();
         }
 
         private void CheckForDraw()

@@ -67,6 +67,9 @@
     <None Include="data\objects\monkey.obj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="data\objects\pyramide.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="data\objects\round_stone.obj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -77,6 +80,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="data\objects\tennis_ball.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\objects\thin_wall.obj">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="data\objects\torus_flat.obj">
@@ -98,9 +104,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\engine\engine.csproj">
-      <Project>{957D9C3C-F774-49C7-BFC0-725E52CD20C3}</Project>
-      <Name>engine</Name>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{957d9c3c-f774-49c7-bfc0-725e52cd20c3}</Project>
+      <Name>Engine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +159,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\textures\marble_blue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\textures\orange.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\textures\primitives_normal.png">

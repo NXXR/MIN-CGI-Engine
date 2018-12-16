@@ -35,13 +35,14 @@ namespace Engine.cgimin.engine.material.simpleblend
 
         }
 
-        public void Draw(BaseObject3D object3d, int textureID, BlendingFactor srcBlendFactor, BlendingFactor destBlendFactor)
+        public void Draw(BaseObject3D object3d, int textureID, BlendingFactorSrc srcBlendFactor, BlendingFactorDest destBlendFactor)
         {
             GL.BlendFunc(srcBlendFactor, destBlendFactor);
 
             // das Vertex-Array-Objekt unseres Objekts wird benutzt
             GL.BindVertexArray(object3d.Vao);
-            
+
+            GL.ActiveTexture(TextureUnit.Texture0);
             GL.BindTexture(TextureTarget.Texture2D, textureID);
 
             // Die Matrix, welche wir als "modelview_projection_matrix" übergeben, wird zusammengebaut:
@@ -65,6 +66,9 @@ namespace Engine.cgimin.engine.material.simpleblend
             
             // Unser Shader Programm wird benutzt
             GL.UseProgram(Program);
+
+            GL.Enable(EnableCap.CullFace);
+            GL.CullFace(CullFaceMode.Front);
         }
 
         protected override void PostDraw() 
