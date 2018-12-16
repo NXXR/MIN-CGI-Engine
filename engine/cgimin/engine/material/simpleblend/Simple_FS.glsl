@@ -1,4 +1,4 @@
-#version 130
+#version 150
 precision highp float;
 
 uniform sampler2D sampler; 
@@ -9,5 +9,5 @@ out vec4 outputColor;
 
 void main()
 {
-    outputColor = texture2D(sampler, texcoord);
+    outputColor = texture(sampler, texcoord);
 }
