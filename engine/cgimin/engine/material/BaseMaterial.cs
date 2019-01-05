@@ -4,6 +4,7 @@ using OpenTK.Graphics.OpenGL;
 using cgimin.engine.object3d;
 using System.IO;
 using Engine.cgimin.engine.octree;
+using OpenTK;
 
 namespace cgimin.engine.material
 {
@@ -12,14 +13,28 @@ namespace cgimin.engine.material
 		// struct contains all possible options dor each material 
 		public struct MaterialSettings
 		{
-			public int colorTexture;
+            // textures
+            public int colorTexture;
 			public int normalTexture;
 			public int cubeTexture;
 			public float shininess;
 
-			// values for blending
-			public BlendingFactor SrcBlendFactor;
+            // textures for component set material
+            public int metalnessTexture;
+            public int roughnessTexture;
+            public int aoTexture;
+            public int glowTexture;
 
+            // smoothness, metalness, glow directly set
+            public float metalness;
+            public float roughness;
+            public float glow;
+
+            // color
+            public Vector3 color;
+            
+            // values for blending
+            public BlendingFactor SrcBlendFactor;
 			public BlendingFactor DestBlendFactor;
 		}
 

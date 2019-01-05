@@ -44,27 +44,75 @@ C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\Engine.pdb
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\engine.csprojResolveAssemblyReference.cache
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\Engine.dll
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\Engine.pdb
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\castshadow\CastShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\castshadow\CastShadow_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\obj\Release\engine.csproj.CoreCompileInputs.cache
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\engine\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\castshadow\CastShadow_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\castshadow\CastShadow_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_VS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_VS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_VS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\Engine.dll
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\bin\Release\Engine.pdb
 C:\Users\mohrm\Documents\cgi_17_18.git\engine\obj\Release\engine.csprojAssemblyReference.cache

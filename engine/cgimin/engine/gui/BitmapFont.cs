@@ -8,7 +8,7 @@ using static cgimin.engine.texture.TextureManager;
 using cgimin.engine.camera;
 using cgimin.engine.texture;
 
-namespace cgimin.engine.gui
+namespace Engine.cgimin.engine.gui
 {
     public class BitmapFont
     {
@@ -32,8 +32,6 @@ namespace cgimin.engine.gui
             public int amount;
         }
 
-        private Matrix4 intTransform;
-
         private List<CharSettings> chars;
         private List<Kerning> kernings;
 
@@ -42,10 +40,11 @@ namespace cgimin.engine.gui
         private int textWidth;
         private int textHeight;
 
+
         // ogl
         private int indexCount;
         private int bitmapFontVOA;
-        private int textureID;
+        private Texture textureID;
 
         private static int program = -1;
         private static int colorTextureLocation;
@@ -55,7 +54,7 @@ namespace cgimin.engine.gui
 
         public BitmapFont(string fontFilePath, string bitmapFilePath)
         {
-            textureID = TextureManager.LoadTexture(bitmapFilePath, false);
+            textureID = TextureManager.LoadGUITexture(bitmapFilePath, false);
 
             chars = new List<CharSettings>();
             for (int i = 0; i < 256; i++)
@@ -123,25 +122,25 @@ namespace cgimin.engine.gui
                 fontData.Add(0);
                 fontData.Add(0);
                 fontData.Add(chars[i].x / (float)textWidth);
-                fontData.Add((chars[i].y + chars[i].height) / (float)textHeight);
+                fontData.Add(chars[i].y / (float)textHeight);
 
                 fontData.Add(chars[i].width);
                 fontData.Add(0);
-                fontData.Add(0);
-                fontData.Add((chars[i].x + chars[i].width) / (float)textWidth);
-                fontData.Add((chars[i].y + chars[i].height) / (float)textHeight);
-
-                fontData.Add(chars[i].width);
-                fontData.Add(chars[i].height);
                 fontData.Add(0);
                 fontData.Add((chars[i].x + chars[i].width) / (float)textWidth);
                 fontData.Add(chars[i].y / (float)textHeight);
 
+                fontData.Add(chars[i].width);
+                fontData.Add(-chars[i].height);
                 fontData.Add(0);
-                fontData.Add(chars[i].height);
+                fontData.Add((chars[i].x + chars[i].width) / (float)textWidth);
+                fontData.Add((chars[i].y + chars[i].height) / (float)textHeight);
+
+                fontData.Add(0);
+                fontData.Add(-chars[i].height);
                 fontData.Add(0);
                 fontData.Add(chars[i].x / (float)textWidth);
-                fontData.Add(chars[i].y / (float)textHeight);
+                fontData.Add((chars[i].y + chars[i].height) / (float)textHeight);
 
                 int bIndex = i * 4;
 
@@ -208,7 +207,7 @@ namespace cgimin.engine.gui
             return w;
         }
 
-        public void DrawString(string wString, float xPosition, float yPosition, int r, int g, int b, int a)
+        public void DrawString(string wString, Matrix4 transform, int r, int g, int b, int a)
         {
             GL.BindVertexArray(bitmapFontVOA);
 
@@ -216,14 +215,13 @@ namespace cgimin.engine.gui
             GL.Disable(EnableCap.DepthTest);
             GL.Disable(EnableCap.CullFace);
             GL.Enable(EnableCap.Blend);
-            //GL.BlendFunc(BlendingFactorSrc.SrcAlpha, BlendingFactorDest.OneMinusSrcAlpha);
             GL.BlendFunc(BlendingFactor.SrcAlpha, BlendingFactor.OneMinusSrcAlpha);
 
             GL.Uniform1(colorTextureLocation, 0);
             GL.ActiveTexture(TextureUnit.Texture0);
-            GL.BindTexture(TextureTarget.Texture2D, textureID);
+            GL.BindTexture(TextureTarget.Texture2D, textureID.Id);
 
-            Matrix4 projection = Matrix4.CreateTranslation(xPosition, yPosition, 0) * Camera.GuiProjection;
+            Matrix4 projection = transform * Camera.GuiProjection;
             GL.UniformMatrix4(projectionLocation, false, ref projection);
 
             Vector4 color = new Vector4(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
@@ -235,7 +233,7 @@ namespace cgimin.engine.gui
             for (int i = 0; i < len; i++)
             {
                 char c = wString[i];
-                GL.Uniform3(charPositionLocation, new Vector3(pos + chars[c].xoffset, baseHeight -(chars[c].height + chars[c].yoffset), 1));
+                GL.Uniform3(charPositionLocation, new Vector3(pos + chars[c].xoffset,  -chars[c].yoffset, 1));
                 pos += chars[c].xadvance;
                 GL.DrawElements(PrimitiveType.Triangles, 6, DrawElementsType.UnsignedInt, c * 6 * sizeof(int));
             }

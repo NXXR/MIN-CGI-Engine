@@ -2,11 +2,11 @@
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
 using cgimin.engine.object3d;
-using cgimin.engine.material.simpletexture;
+using Engine.cgimin.engine.material.simpletexture;
 using cgimin.engine.texture;
 using cgimin.engine.camera;
 
-namespace cgimin.engine.skybox
+namespace Engine.cgimin.engine.skybox
 {
     public class SkyBox
     {
@@ -79,20 +79,18 @@ namespace cgimin.engine.skybox
             Camera.SetTransformMatrix(cameraTransform);
 
             GL.Disable(EnableCap.CullFace);
-            GL.Disable(EnableCap.DepthTest);
             GL.DepthMask(false);
 
             GL.ActiveTexture(TextureUnit.Texture0);
 
-            skyboxTextureMaterial.Draw(frontSide, frontID);
-            skyboxTextureMaterial.Draw(backSide, backID);
-            skyboxTextureMaterial.Draw(leftSide, leftID);
-            skyboxTextureMaterial.Draw(rightSide, rightID);
-            skyboxTextureMaterial.Draw(upSide, upID);
-            skyboxTextureMaterial.Draw(downSide, downID);
+            skyboxTextureMaterial.DrawDirect(frontSide, frontID);
+            skyboxTextureMaterial.DrawDirect(backSide, backID);
+            skyboxTextureMaterial.DrawDirect(leftSide, leftID);
+            skyboxTextureMaterial.DrawDirect(rightSide, rightID);
+            skyboxTextureMaterial.DrawDirect(upSide, upID);
+            skyboxTextureMaterial.DrawDirect(downSide, downID);
 
             GL.Enable(EnableCap.CullFace);
-            GL.Enable(EnableCap.DepthTest);
             GL.DepthMask(true);
 
             Camera.SetTransformMatrix(saveTrasform);

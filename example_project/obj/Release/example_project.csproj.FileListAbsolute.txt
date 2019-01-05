@@ -329,10 +329,6 @@ C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\bin\Release\Engine.
 C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\example_project.csprojResolveAssemblyReference.cache
 C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\lv1.exe
 C:\Users\Lars Mohrmann\Desktop\lvn3\lvn3\lv3\example_project\obj\Release\lv1.pdb
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\simple_reflection.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\test.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\test2.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\wobble.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\monkey.obj
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\torus_flat.obj
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\torus_smooth.obj
@@ -347,92 +343,355 @@ C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\example_p
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\lv1.exe
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\lv1.pdb
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\tennis_ball.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\tennis_ball.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\tennis_field.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\tennis_arena.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\shadow_color.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\3colors.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\experimental.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\blue_towel.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\primitives_normal.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\sofa_pattern_normal.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\cube.obj
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\abstract_statue.obj
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\sphere.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\brick_normal.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\relief_normal.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\single_color.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\cube_smooth.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_back.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_bottom.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_front.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_left.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_right.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\env_reflect_top.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\round_stone.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_back.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_bottom.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_front.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_left.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_right.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\cmap2_top.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\marble_blue.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\stone_normal.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\b_checker.png
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\thin_wall.obj
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
-C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\orange.png
 C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\pyramide.obj
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\directional\DirectionalLight_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbufferlayout\GBufferLayout_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m00_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m01_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m02_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m03_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m04_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m05_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m06_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m07_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\night_m08_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\brick_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\b_checker.tif
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\ibl_brdf_lut.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c00.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c01.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c02.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c03.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c04.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_c05.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m00_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m01_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m02_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m03_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m04_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m05_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m06_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m07_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c00.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c01.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c02.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c03.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c04.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\ibl\sky_m08_c05.bmp
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\rustiron_basecolor.tif
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\rustiron_normal.tif
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\objects\sphere_detail.obj
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\normalmap.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\castshadow\CastShadow_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\castshadow\CastShadow_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\obj\Release\example_project.csproj.CoreCompileInputs.cache
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-albedo.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-ao.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-glow.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-metalness.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-normal.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\harshbricks-roughness.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_FS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_VS.glsl
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\textures\hochschule.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\fonts\abel_normal.png
+C:\Users\Lars Mohrmann\Documents\cgi_17_18\example_project\bin\Release\data\fonts\abel_normal.fnt
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\Bitmap9Grid_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapFont_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapFont_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\gui\shader\BitmapSlideGraphic_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\ibl\FullscreenIBL_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\local\pointlightPBR\PointLightPBR_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\castshadow\CastShadow_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\castshadow\CastShadow_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffercomponents\GBufferFromComponents_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffertwotextures\GBufferFromTwoTexturesLayout_VS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_FS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\local\pointlight\PointLight_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simpleblend\Simple_FS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simpleblend\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\gbuffer\gbuffervalues\GBufferFromValues_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simple\simpleblend\Simple_VS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_FS.glsl
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\lighting\fullscreen\fullscreensimple\FullscreenSimple_VS.glsl
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\3colors.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\blue_towel.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\brick_normal.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\b_checker.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_back.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_bottom.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_front.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_left.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_right.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\cmap2_top.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_back.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_bottom.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_front.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_left.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_right.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\env_reflect_top.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\marble_blue.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\orange.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\primitives_normal.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\relief_normal.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\shadow_color.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\simple_reflection.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\single_color.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\sofa_pattern_normal.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\stone_normal.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\tennis_ball.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\tennis_field.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\test.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\test2.png
-C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\wobble.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\material\simple\simpletexture\Simple_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurFullscreen_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurHorizontal_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_FS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\cgimin\engine\postprocessing\blur\BlurVertical_VS.glsl
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\fonts\abel_normal.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m00_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m01_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m02_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m03_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m04_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m05_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m06_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m07_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\night_m08_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c00.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c01.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c02.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c03.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c04.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_c05.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m00_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m01_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m02_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m03_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m04_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m05_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m06_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m07_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c00.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c01.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c02.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c03.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c04.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\ibl\sky_m08_c05.bmp
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\brick_normal.tif
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\b_checker.tif
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-albedo.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-ao.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-glow.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-metalness.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-normal.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\harshbricks-roughness.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\hochschule.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\ibl_brdf_lut.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\normalmap.png
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\rustiron_basecolor.tif
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\textures\rustiron_normal.tif
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\fonts\abel_normal.fnt
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\abstract_statue.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\cube.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\cube_smooth.obj
@@ -441,6 +700,7 @@ C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\pyramide.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\round_stone.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\sphere.obj
+C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\sphere_detail.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\tennis_arena.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\tennis_ball.obj
 C:\Users\mohrm\Documents\cgi_17_18.git\example_project\bin\Release\data\objects\thin_wall.obj

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OpenTK.Graphics.OpenGL;
 using OpenTK;
 
 
@@ -22,14 +20,14 @@ namespace cgimin.engine.camera
         };
 
         // Struct for a plane (hnf)
-        struct Plane
+        public struct Plane
         {
             public float d;
             public Vector3 normal;
         }
 
         // frustum clipping-planes
-        private static List<Plane> planes;
+        public static List<Plane> Planes { get; private set; }
         
         // Matrix for the transformation
         private static Matrix4 transformation;
@@ -44,25 +42,54 @@ namespace cgimin.engine.camera
         private static float xRotation;
         private static float yRotation;
 
+        // saved cam values
+        private static int savedScreenWidth;
+        private static int savedScreenHeight;
+        private static float savedFov;
+        private static float savedNear;
+        private static float savedFar;
+        private static Matrix4 savedProjection;
+        private static Matrix4 savedTransformation;
+
+        // gui projection matrix
+        public static Matrix4 GuiProjection { get; private set; }
 
         public static void Init()
         {
-            planes = new List<Plane>();
-            for (int i = 0; i < 6; i++) planes.Add(new Plane());
+            Planes = new List<Plane>();
+            for (int i = 0; i < 6; i++) Planes.Add(new Plane());
 
             perspectiveProjection = Matrix4.Identity;
             transformation = Matrix4.Identity;
             xRotation = 0;
             yRotation = 0;
             position = Vector3.Zero;
+
+            // create default orthographic
+            Matrix4 ddProjection = new Matrix4();
+            Matrix4.CreateOrthographic(1920, 1080, -1, 1, out ddProjection);
+            GuiProjection = ddProjection;
+
         }
 
-
+        
         // width, height = size of screen in pixeln, fov = "field of view", der opening-angle for the camera lense
-        public static void SetWidthHeightFov(int width, int height, float fov)
+        public static void SetWidthHeightFov(int width, int height, float fov, float near = 1, float far = 1000)
         {
+            savedScreenWidth = width;
+            savedScreenHeight = height;
+            savedFov = fov;
+            savedNear = near;
+            savedFar = far;
+
+
             float aspectRatio = width / (float)height;
-            Matrix4.CreatePerspectiveFieldOfView((float)(fov * Math.PI / 180.0f), aspectRatio, 0.01f, 500, out perspectiveProjection);
+            Matrix4.CreatePerspectiveFieldOfView((float)(fov * Math.PI / 180.0f), aspectRatio, near, far, out perspectiveProjection);
+
+            savedProjection = perspectiveProjection;
+            savedTransformation = transformation;
+
+            CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
 
@@ -73,6 +100,7 @@ namespace cgimin.engine.camera
             position = eye;
             transformation = Matrix4.LookAt(eye, target, up);
 
+            savedTransformation = transformation;
             CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
@@ -97,6 +125,7 @@ namespace cgimin.engine.camera
             transformation *= Matrix4.CreateRotationX(xRotation);
             transformation *= Matrix4.CreateRotationY(yRotation);
 
+            savedTransformation = transformation;
             CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
@@ -114,14 +143,33 @@ namespace cgimin.engine.camera
 
             transformation = Matrix4.Identity;
             transformation *= Matrix4.CreateTranslation(-position.X, -position.Y, -position.Z);
-            transformation *= Matrix4.CreateRotationZ(yRotation);
+            transformation *= Matrix4.CreateRotationY(yRotation);
             transformation *= Matrix4.CreateRotationX(xRotation);
 
+            savedTransformation = transformation;
             CreateViewFrustumPlanes(transformation * perspectiveProjection);
         }
 
+        // directly set the Projektionsmatrix for the Shadow-Mapping
+        public static void SetProjectionMatrix(Matrix4 projection)
+        {
+            perspectiveProjection = projection;
+        }
+
+
+        // set back rto previous set transform
+        public static void SetBackToLastCameraSettings()
+        {
+            transformation = savedTransformation;
+            perspectiveProjection = savedProjection;
+            GL.Viewport(0, 0, savedScreenWidth, savedScreenHeight);
+            SetWidthHeightFov(savedScreenWidth, savedScreenHeight, savedFov, savedNear, savedFar);
+
+        }
+
+
         // calculate 6 clipping planes of the view frustum
-         private static void CreateViewFrustumPlanes(Matrix4 mat)
+        public static void CreateViewFrustumPlanes(Matrix4 mat)
         {
             // left
             Plane plane = new Plane();
@@ -129,7 +177,7 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 + mat.M21;
             plane.normal.Z = mat.M34 + mat.M31;
             plane.d = mat.M44 + mat.M41;
-            planes[(int)planeEnum.LEFT_PLANE] = plane;
+            Planes[(int)planeEnum.LEFT_PLANE] = plane;
 
             // right
             plane = new Plane();
@@ -137,7 +185,7 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 - mat.M21;
             plane.normal.Z = mat.M34 - mat.M31;
             plane.d = mat.M44 - mat.M41;
-            planes[(int)planeEnum.RIGHT_PLANE] = plane;
+            Planes[(int)planeEnum.RIGHT_PLANE] = plane;
 
             // bottom
             plane = new Plane();
@@ -145,7 +193,7 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 + mat.M22;
             plane.normal.Z = mat.M34 + mat.M32;
             plane.d = mat.M44 + mat.M42;
-            planes[(int)planeEnum.BOTTOM_PLANE] = plane;
+            Planes[(int)planeEnum.BOTTOM_PLANE] = plane;
 
             // top
             plane = new Plane();
@@ -153,7 +201,7 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 - mat.M22;
             plane.normal.Z = mat.M34 - mat.M32;
             plane.d = mat.M44 - mat.M42;
-            planes[(int)planeEnum.TOP_PLANE] = plane;
+            Planes[(int)planeEnum.TOP_PLANE] = plane;
 
             // near
             plane = new Plane();
@@ -161,7 +209,7 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 + mat.M23;
             plane.normal.Z = mat.M34 + mat.M33;
             plane.d = mat.M44 + mat.M43;
-            planes[(int)planeEnum.NEAR_PLANE] = plane;
+            Planes[(int)planeEnum.NEAR_PLANE] = plane;
 
             // far
             plane = new Plane();
@@ -169,12 +217,12 @@ namespace cgimin.engine.camera
             plane.normal.Y = mat.M24 - mat.M23;
             plane.normal.Z = mat.M34 - mat.M33;
             plane.d = mat.M44 - mat.M43;
-            planes[(int)planeEnum.FAR_PLANE] = plane;
+            Planes[(int)planeEnum.FAR_PLANE] = plane;
 
             // normalize
             for (int i = 0; i < 6; i++)
             {
-                plane = planes[i];
+                plane = Planes[i];
 
                 float length = plane.normal.Length;
                 plane.normal.X = plane.normal.X / length;
@@ -182,7 +230,7 @@ namespace cgimin.engine.camera
                 plane.normal.Z = plane.normal.Z / length;
                 plane.d = plane.d / length;
 
-                planes[i] = plane;
+                Planes[i] = plane;
             }
         }
 
@@ -190,7 +238,7 @@ namespace cgimin.engine.camera
         // returns the signed distance froma point to frustum clipping plane
         private static float signedDistanceToPoint(int planeID, Vector3 pt)
         {
-            return Vector3.Dot(planes[planeID].normal, pt) + planes[planeID].d;
+            return Vector3.Dot(Planes[planeID].normal, pt) + Planes[planeID].d;
         }
 
 
@@ -221,10 +269,21 @@ namespace cgimin.engine.camera
         }
 
 
+        public static void SetTransformMatrix(Matrix4 transform)
+        {
+            transformation = transform;
+        }
+
         public static Matrix4 PerspectiveProjection
         {
             get { return perspectiveProjection; }
         }
+
+
+
+
+      
+
 
     }
 }

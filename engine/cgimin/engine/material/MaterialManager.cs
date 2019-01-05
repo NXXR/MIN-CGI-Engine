@@ -1,6 +1,8 @@
 ﻿using System;
 using Engine.cgimin.engine.material.simpleblend;
 using cgimin.engine.material.gbufferlayout;
+using cgimin.engine.material.gbuffervalues;
+using cgimin.engine.material.castshadow;
 
 namespace cgimin.engine.material
 {
@@ -10,7 +12,10 @@ namespace cgimin.engine.material
 	public enum Material
 	{
 		GBUFFERLAYOUT = 0,
-		SIMPLE_BLEND = 1
+        GBUFFERVALUESET = 1,
+        GBUFFERCOMPONENTS = 2,
+        CASTSHADOW = 3,
+        SIMPLE_BLEND = 4
 	}
 
 	public static class MaterialManager
@@ -21,7 +26,10 @@ namespace cgimin.engine.material
 		{
 			Materials = new BaseMaterial[Enum.GetNames(typeof(Material)).Length];
 
-            Materials[(int)Material.GBUFFERLAYOUT] = new GBufferLayoutMaterial();
+            Materials[(int)Material.GBUFFERLAYOUT] = new GBufferFromTwoTexturesMaterial();
+            Materials[(int)Material.GBUFFERVALUESET] = new GBufferFromValuesMaterial();
+            Materials[(int)Material.GBUFFERCOMPONENTS] = new GBufferFromComponentsMaterial();
+            Materials[(int)Material.CASTSHADOW] = new CastShadowMaterial();
             Materials[(int)Material.SIMPLE_BLEND] = new SimpleBlendMaterial();
 		}
 
