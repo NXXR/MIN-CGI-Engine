@@ -585,4 +585,4 @@ C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\example_project.
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\example_project.csproj.CopyComplete
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\lv1.exe
 C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\lv1.pdb
-C:\Users\mohrm\Documents\cgimin-18-19\example_project\obj\Debug\lv1.exe.config
+C:\Users\mohrm\Documents\cgimin-18-19\example_project\bin\Debug\OpenTK.pdb

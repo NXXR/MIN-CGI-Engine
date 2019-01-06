@@ -65,6 +65,8 @@ namespace Examples.Tutorial
         private List<Vector3> lightColors;
 
         // store mouse positions
+        private int currentMouseX = 0;
+        private int currentMouseY = 0;
         private int oldMouseX = 0;
         private int oldMouseY = 0;
 
@@ -158,8 +160,9 @@ namespace Examples.Tutorial
             GL.Enable(EnableCap.CullFace);
             GL.CullFace(CullFaceMode.Front);
 
-            // set keyboard event
+            // set keyboard & mouse event
             this.KeyDown += new EventHandler<KeyboardKeyEventArgs>(KeyDownEvent);
+            this.MouseMove += new EventHandler<MouseMoveEventArgs>(MouseMoveEvent);
 
             // init matrial settings
 
@@ -256,6 +259,7 @@ namespace Examples.Tutorial
 
         }
  
+
         private void KeyDownEvent(object sender, OpenTK.Input.KeyboardKeyEventArgs e)
         {
             if (e.Key == OpenTK.Input.Key.F11)
@@ -269,9 +273,14 @@ namespace Examples.Tutorial
                     WindowState = WindowState.Normal;
                 }
             }
-
             if (e.Key == OpenTK.Input.Key.Escape) this.Exit();
+        }
 
+
+        private void MouseMoveEvent(object sender, MouseMoveEventArgs e)
+        {
+            currentMouseX = e.X;
+            currentMouseY = e.Y;
         }
 
 
@@ -284,33 +293,33 @@ namespace Examples.Tutorial
             // Camera.UpdateFlyCamera(Keyboard[OpenTK.Input.Key.Left], Keyboard[OpenTK.Input.Key.Right], Keyboard[OpenTK.Input.Key.Up], Keyboard[OpenTK.Input.Key.Down],
             //                        Keyboard[OpenTK.Input.Key.W], Keyboard[OpenTK.Input.Key.S]);
 
+            KeyboardState keyboardState = Keyboard.GetState();
+
+            if (keyboardState[OpenTK.Input.Key.Number1]) displaySwitch = 0;
+            if (keyboardState[OpenTK.Input.Key.Number2]) displaySwitch = 1;
+            if (keyboardState[OpenTK.Input.Key.Number3]) displaySwitch = 2;
+            if (keyboardState[OpenTK.Input.Key.Number4]) displaySwitch = 3;
+            if (keyboardState[OpenTK.Input.Key.Number5]) displaySwitch = 4;
+            if (keyboardState[OpenTK.Input.Key.Number6]) displaySwitch = 5;
 
 
-            if (Keyboard[OpenTK.Input.Key.Number1]) displaySwitch = 0;
-            if (Keyboard[OpenTK.Input.Key.Number2]) displaySwitch = 1;
-            if (Keyboard[OpenTK.Input.Key.Number3]) displaySwitch = 2;
-            if (Keyboard[OpenTK.Input.Key.Number4]) displaySwitch = 3;
-            if (Keyboard[OpenTK.Input.Key.Number5]) displaySwitch = 4;
-            if (Keyboard[OpenTK.Input.Key.Number6]) displaySwitch = 5;
+            if (oldMouseX > 0) Camera.UpdateMouseCamera(0.3f, keyboardState[OpenTK.Input.Key.A], keyboardState[OpenTK.Input.Key.D],
+                                                              keyboardState[OpenTK.Input.Key.W], keyboardState[OpenTK.Input.Key.S], 
+                                                              (oldMouseY - currentMouseY) / 200.0f, (oldMouseX - currentMouseX) / 200.0f);
 
+            if (keyboardState[OpenTK.Input.Key.T]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0.02f, 0);
+            if (keyboardState[OpenTK.Input.Key.G]) Camera.UpdateMouseCamera(0.3f, false, false, false, false,-0.02f, 0);
+            if (keyboardState[OpenTK.Input.Key.F]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0, 0.02f);
+            if (keyboardState[OpenTK.Input.Key.H]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0, -0.02f);
 
-            if (oldMouseX > 0) Camera.UpdateMouseCamera(0.3f, Keyboard[OpenTK.Input.Key.A], Keyboard[OpenTK.Input.Key.D], 
-                                                              Keyboard[OpenTK.Input.Key.W],Keyboard[OpenTK.Input.Key.S], 
-                                                              (oldMouseY - this.Mouse.Y) / 200.0f, (oldMouseX - this.Mouse.X) / 200.0f);
-
-            if (Keyboard[OpenTK.Input.Key.T]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0.02f, 0);
-            if (Keyboard[OpenTK.Input.Key.G]) Camera.UpdateMouseCamera(0.3f, false, false, false, false,-0.02f, 0);
-            if (Keyboard[OpenTK.Input.Key.F]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0, 0.02f);
-            if (Keyboard[OpenTK.Input.Key.H]) Camera.UpdateMouseCamera(0.3f, false, false, false, false, 0, -0.02f);
-
-            oldMouseX = this.Mouse.X;
-            oldMouseY = this.Mouse.Y;
+            oldMouseX = currentMouseX;
+            oldMouseY = currentMouseY;
 
             //if (this.Mouse.X < SCREEN_WIDTH / 2 - 100) OpenTK.Input.Mouse.SetPosition(this.X + SCREEN_WIDTH / 2 + 100,  this.Y + this.Mouse.Y);
             //if (this.Mouse.X > SCREEN_WIDTH / 2 + 100) OpenTK.Input.Mouse.SetPosition(this.X + SCREEN_WIDTH / 2 - 100,  this.Y + this.Mouse.Y);
 
-            if (Keyboard[OpenTK.Input.Key.O]) currentIBL = iblSources[0];
-            if (Keyboard[OpenTK.Input.Key.P]) currentIBL = iblSources[1];
+            if (keyboardState[OpenTK.Input.Key.O]) currentIBL = iblSources[0];
+            if (keyboardState[OpenTK.Input.Key.P]) currentIBL = iblSources[1];
 
             // updateCounter simply increaes
             updateCounter++;
@@ -320,7 +329,7 @@ namespace Examples.Tutorial
         protected override void OnRenderFrame(FrameEventArgs e)
         {
 
-            updateCounter = 1000;
+            //updateCounter = 1000;
 
             // set the light direction to the current IBL light settings
             CascadedShadowMapping.SetLightDirection(currentIBL.lightDirection);
@@ -352,15 +361,6 @@ namespace Examples.Tutorial
 
             // draw all objects into the gbuffers
             GL.CullFace(CullFaceMode.Front);
-
-            /*
-                private int harshbricksNormalID;
-                private int harshbricksColorID;
-                private int harshbricksAOID;
-                private int harshbricksGlowID;
-                private int harshbricksMetalnessID;
-                private int harshbricksRoughnessID;
-            */
 
             // draw dynamic objects
             (MaterialManager.GetMaterial(Material.GBUFFERLAYOUT) as GBufferFromTwoTexturesMaterial).DrawDirect(monkeyObject, rustTextureColorID, rustTextureNormalID);

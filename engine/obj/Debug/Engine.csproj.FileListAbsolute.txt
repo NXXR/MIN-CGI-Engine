@@ -161,3 +161,4 @@ C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CoreCompile
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\engine.csproj.CopyComplete
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.dll
 C:\Users\mohrm\Documents\cgimin-18-19\engine\obj\Debug\Engine.pdb
+C:\Users\mohrm\Documents\cgimin-18-19\engine\bin\Debug\OpenTK.pdb
